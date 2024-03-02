@@ -1,20 +1,27 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import NewsItems from './components/NewsItems'
-import Category from './components/Category'
-
+// import Forms from './components/Forms'
+import { BrowserRouter , Routes, Route } from 'react-router-dom'
+import Forms from './components/Forms'
 
 
 
 function App() {
   return (
     <>
+    <BrowserRouter>
     <Navbar/>
    
-    <Category/>
-    <h3 className='text-center mt-3' style={{ wordSpacing: '.5rem' }}>NewziFy - Top HeadLines Of The Day</h3>
+    {/* <Category/> */}
+    <Routes>
+    <Route path="/sign-in" element={<Forms formtitle='Sign-In Using Your Account'/>} />
+    <Route path="/sign-up" element={<Forms/>} />
+    <Route path="/" element={<NewsItems/>} />
+    </Routes>
 
-    <NewsItems/>
+    
+    </BrowserRouter>
     </>
   )
 }
