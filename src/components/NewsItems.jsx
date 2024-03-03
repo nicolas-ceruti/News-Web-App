@@ -4,8 +4,9 @@ import Category from './Category';
 
 function NewsItems({category,setCategory}) {
     let [articles, setArticles] = useState([]);
+    let[pageNumber,setPageNumber]=useState(1)
     let resultNews = async () => {
-        const url = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=a63ab02946b640f1a45559f967c8e017`;
+        const url = `https://newsapi.org/v2/top-headlines?country=in&${category}=business&apiKey=4a80da18ae0640f1bb66659c79dfba2e`;
         let data = await fetch(url);
         let parsedData = await data.json();
         setArticles(parsedData.articles);
@@ -28,7 +29,7 @@ function NewsItems({category,setCategory}) {
                         return (
                             <div className='col-md-3 mb-3' key={element.url}>
                                 <NewsCards  imageUrl={element.urlToImage!==null?element.urlToImage:'https://images.freeimages.com/images/large-previews/03a/news-1567279.jpg?fmt=webp&w=500'} title={element.title}
-                                    newsUrl={element.url} sourceName={element.source.name} description={element.description}/>
+                                    newsUrl={element.url} sourceName={element.source.name} description={element.description} authorName={element.author===null?'Anonymous':element.author} publishedAt={element.publishedAt}/>
                             </div>
                         )
                     }
@@ -38,6 +39,11 @@ function NewsItems({category,setCategory}) {
 
 
 
+            <div className="container border d-flex justify-content-between  " >
+                <button disabled={pageNumber==1} className="btn btn-outline-dark" >&larr; Previous</button>
+                <button className="btn btn-outline-dark"  >Next &rarr;</button>
+
+            </div>
                 </div>
 
             </div>

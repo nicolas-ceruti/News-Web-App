@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
-
+import backgroundImage from '/Users/mangeshyadav/Desktop/React/new-app/src/assets/beams-basic.png'
 
 function Forms(props) {
   const [showPassword, setShowPassword] = useState(false);
@@ -12,11 +12,17 @@ function Forms(props) {
   };
 
   return (
-    <div className="container">
-      <div className="row justify-content-center">
-        <div className="col-md-6 mt-5">
+    <div className="broder" style={{
+      backgroundImage: `url(${backgroundImage})`,
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      minHeight: '100vh', // Ensure the div covers the entire viewport height
+    }}>
+      <div className="row justify-content-center ">
+        <div className="col-md-6 mt-5 border p-5">
           <h2 className="text-center mb-4">{props.formtitle}</h2>
-          <form className={props.button}>
+          <form className={props.button} >
             {showForgotPassword && (<div className="mb-3">
               <label htmlFor="name" className="form-label">Full Name</label>
               <input
