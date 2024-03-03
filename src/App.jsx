@@ -15,8 +15,8 @@ function App() {
    
     {/* <Category/> */}
     <Routes>
-    <Route path="/sign-in" element={<Forms formtitle='Sign-In Using Your Account'/>} />
-    <Route path="/sign-up" element={<Forms/>} />
+    <Route path="/sign-in" element={<Forms formtitle='Sign-In Using Your Account' button='Sign in'/>} />
+    <Route path="/sign-up" element={<Forms formtitle='Create A New Account' button='Sign up' />} />
     <Route path="/" element={<NewsItems/>} />
     </Routes>
 

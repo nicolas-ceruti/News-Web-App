@@ -34,11 +34,11 @@ function Navbar() {
           <form className="d-flex" role="search">
             <Link to="/sign-in">
 
-            <button className="btn btn-outline-success m-1" type="submit" >Sign In</button>
+            <button className="btn btn-outline-primary m-1" type="submit" >Sign In</button>
             </Link>
             <Link to="/sign-up">
 
-            <button className="btn btn-outline-success m-1" type="submit" >Sign Up</button>
+            <button className="btn btn-outline-primary m-1" type="submit" >Sign Up</button>
             </Link>
           </form>
       </div>
