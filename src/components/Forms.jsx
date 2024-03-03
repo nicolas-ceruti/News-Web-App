@@ -16,7 +16,7 @@ function Forms(props) {
         <div className="col-md-6 mt-5">
           <h2 className="text-center mb-4">{props.formtitle}</h2>
           <form className={props.button}>
-            { showForgotPassword && (<div className="mb-3">
+            {showForgotPassword && (<div className="mb-3">
               <label htmlFor="name" className="form-label">Full Name</label>
               <input
                 type="text"
@@ -26,7 +26,7 @@ function Forms(props) {
                 required
               />
             </div>)}
-            
+
             <div className="mb-3">
               <label htmlFor="email" className="form-label">Email address</label>
               <input
@@ -38,7 +38,7 @@ function Forms(props) {
               />
             </div>
             <div className="mb-3">
-              <label htmlFor="password" className="form-label">Password</label>
+              <label htmlFor="password" className="form-label">{props.Password}</label>
               <div className="input-group">
                 <input
                   type={showPassword ? "text" : "password"}
@@ -62,9 +62,9 @@ function Forms(props) {
               )}
             </div>
             <div className="mb-3">
-              <button
+              <button style={{height:'3rem'}}
                 type="submit"
-                className="btn btn-outline-primary w-100 mx-auto d-block"
+                className="btn btn-outline-dark w-100  mx-auto d-block"
               >
                 {props.formtitle}
               </button>
@@ -72,18 +72,20 @@ function Forms(props) {
           </form>
           {props.formtitle === "Sign in" && (
             <p className="text-center text-secondary">Not a member?{' '}
-              <a href="#" className="fw-bold text-primary">Start a 14 day free trial</a>
+              <a href="#" className="fw-bold text-dark">Start a 14 day free trial</a>
             </p>
           )}
 
           {/* Sign up/Sign in with Google and Facebook */}
-          <div className="mt-3 " style={{display:'flex',justifyContent:'space-around',margin:'1rem'}}>
-            <button className="btn btn-outline-primary w-45  ">
-              {props.button} Using Google
+          <div className="mt-3 " style={{ display: 'flex', justifyContent: 'space-around', margin: '1rem' }}>
+            <button className="btn btn-outline-dark w-50 mx-4 ">
+              {props.button} With&nbsp; <img style={{height:'2rem',marginBottom:'.2rem'}} src={props.google}/>
             </button>
-            <button className="btn btn-outline-primary w-45 ">
-              {props.button} Using Facebook
+
+            <button className="btn btn-outline-dark w-50 ">
+              {props.button} With &nbsp;<img style={{height:'2rem',marginBottom:'.2rem'}} src={props.facebook}/>
             </button>
+
           </div>
         </div>
       </div>
