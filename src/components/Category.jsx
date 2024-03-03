@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Category() {
+function Category({setCategory}) {
   return (
     <div style={{display:'flex',justifyContent:'space-around',flexWrap:'wrap',margin:'1rem auto'}} className='border p-2 m-0'>
       <button type="button" style={{
@@ -23,7 +23,7 @@ function Category() {
       onMouseOut={(e) => {
         e.currentTarget.style.backgroundPosition = 'right';
         e.currentTarget.style.color = 'black'; // Reset text color on mouse out
-      }}>General</button>
+      }} >General</button>
        <button type="button" style={{
         borderRadius: '2rem',
         padding: '.5em 1em',
@@ -43,7 +43,7 @@ function Category() {
       onMouseOut={(e) => {
         e.currentTarget.style.backgroundPosition = 'right';
         e.currentTarget.style.color = 'black'; // Reset text color on mouse out
-      }}>Health</button>
+      }} onClick={()=>setCategory("health")}>Health</button>
       <button type="button" style={{
         borderRadius: '2rem',
         padding: '.5em 2em',
@@ -63,7 +63,7 @@ function Category() {
       onMouseOut={(e) => {
         e.currentTarget.style.backgroundPosition = 'right';
         e.currentTarget.style.color = 'black'; // Reset text color on mouse out
-      }}>Business</button>
+      }}onClick={()=>setCategory("business")}>Business</button>
       <button type="button" style={{
         borderRadius: '2rem',
         padding: '.5em 2em',
@@ -83,7 +83,7 @@ function Category() {
       onMouseOut={(e) => {
         e.currentTarget.style.backgroundPosition = 'right';
         e.currentTarget.style.color = 'black'; // Reset text color on mouse out
-      }}>Entertainment</button>
+      }} onClick={()=>setCategory("entertainment")}>Entertainment</button>
       <button type="button" style={{
         borderRadius: '2rem',
         padding: '.5em 2em',
@@ -103,7 +103,7 @@ function Category() {
       onMouseOut={(e) => {
         e.currentTarget.style.backgroundPosition = 'right';
         e.currentTarget.style.color = 'black'; // Reset text color on mouse out
-      }}>Sports</button>
+      }} onClick={()=>setCategory("sports")}>Sports</button>
       <button type="button" style={{
         borderRadius: '2rem',
         padding: '.5em 2em',
@@ -123,7 +123,7 @@ function Category() {
       onMouseOut={(e) => {
         e.currentTarget.style.backgroundPosition = 'right';
         e.currentTarget.style.color = 'black'; // Reset text color on mouse out
-      }}>Technology</button>
+      }} onClick={()=>setCategory("technology")}>Technology</button>
       <button type="button" style={{
         borderRadius: '2rem',
         padding: '.5em 2em',
@@ -143,7 +143,7 @@ function Category() {
       onMouseOut={(e) => {
         e.currentTarget.style.backgroundPosition = 'right';
         e.currentTarget.style.color = 'black'; // Reset text color on mouse out
-      }}>Science</button> 
+      }} onClick={()=>setCategory("science")}>Science</button> 
 
     </div>
   )

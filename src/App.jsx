@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from './components/Navbar'
 import NewsItems from './components/NewsItems'
 // import Forms from './components/Forms'
@@ -11,17 +11,18 @@ import Category from './components/Category'
 
 
 function App() {
+  const[category,setCategory]=useState("general")
   return (
     <>
     <BrowserRouter>
     <Navbar/>
-    <Category/>
+    <Category setCategory={setCategory}/>
    
     
     <Routes>
     <Route path="/sign-in" element={<Forms formtitle='Sign-In Using Your Account' button='Sign in' Password='Password' google={google}  facebook={facebook}/>}/>
     <Route path="/sign-up" element={<Forms formtitle='Create A New Account' button='Sign up' Password='Create Password' google={google}  facebook={facebook}/>} />
-    <Route path="/" element={<NewsItems/>} />
+    <Route path="/" element={<NewsItems category={category}/>} />
     </Routes>
 
     
