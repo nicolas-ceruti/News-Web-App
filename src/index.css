@@ -69,3 +69,13 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+a::before{
+  content:'';
+  position:abolute;
+  top:0;
+  left:0;
+  height:100%;
+  widht:100%;
+  background:#fff;
+  
+}

@@ -27,8 +27,14 @@ function NewsCards(props) {
           <h5 className="card-title">{title}</h5>
           <p className="card-text">Source: {sourceName}</p>
         </div>
-        <a href={newsUrl} target='_blank' className="btn btn btn-outline-primary" style={{ width: '8rem' }}>Read More</a>
+
+        <div style={{display:'flex',justifyContent:'space-between'}}>
+        <a href={newsUrl} target='_blank' className="btn btn btn-outline-primary " style={{ width: '8rem' }}>Read More</a>
+        {/* <a href={newsUrl} target='_blank' className="btn btn btn-outline-primary disabled" disabled style={{ width: '8rem' }}>Sneek Peek</a> */}
+
+        </div>
       </div>
+
     </div>
   );
 }

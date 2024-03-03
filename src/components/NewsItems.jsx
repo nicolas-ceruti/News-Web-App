@@ -18,7 +18,7 @@ function NewsItems(props) {
 
     return (
         <>
-            <h3 className='text-center mt-3' style={{ wordSpacing: '.5rem' }}>NewziFy - Top HeadLines Of The Day</h3>
+            <h3 className='text-center mt-3' style={{ wordSpacing: '.5rem' }}>  NewziFy - Top HeadLines Of The Day</h3>
 
             <div style={{ margin: '2rem', padding: '.5rem'}}>
                 <div className="row ">
