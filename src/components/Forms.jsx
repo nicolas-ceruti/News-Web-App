@@ -83,7 +83,7 @@ function Forms(props) {
               {props.button} With&nbsp; <img style={{height:'2rem',marginBottom:'.2rem'}} src={props.google}/>
             </button>
 
-            <button className="btn btn-outline-dark w-50 ">
+            <button className="btn btn-outline-dark w-50 mx-4">
               {props.button} With &nbsp;<img style={{height:'2rem',marginBottom:'.2rem'}} src={props.facebook}/>
             </button>
 

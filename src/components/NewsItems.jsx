@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import NewsCards from './NewsCards'
+import Category from './Category';
 
-function NewsItems({category}) {
+function NewsItems({category,setCategory}) {
     let [articles, setArticles] = useState([]);
     let resultNews = async () => {
         const url = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=a63ab02946b640f1a45559f967c8e017`;
@@ -18,6 +19,7 @@ function NewsItems({category}) {
 
     return (
         <>
+        <Category setCategory={setCategory}/>
             <h3 className='text-center mt-3' style={{ wordSpacing: '.5rem' }}>  NewziFy - Top HeadLines Of The Day</h3>
 
             <div style={{ margin: '2rem', padding: '.5rem'}}>
