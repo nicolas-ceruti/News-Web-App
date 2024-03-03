@@ -2,7 +2,7 @@ import React from 'react'
 
 function Category({setCategory}) {
   return (
-    <div style={{display:'flex',justifyContent:'space-around',flexWrap:'wrap',margin:'1rem auto'}} className='border p-2 m-0'>
+    <div  style={{display:'flex',justifyContent:'space-around',flexWrap:'wrap',margin:'1rem auto'}} className='border p-2 m-0'>
       <button type="button" style={{
         
         
@@ -18,12 +18,14 @@ function Category({setCategory}) {
       className="btn btn-outline-dark btn-sm"
       onMouseOver={(e) => {
         e.currentTarget.style.backgroundPosition = 'left';
+       
         e.currentTarget.style.color = 'white'; // Change text color on hover
       }}
       onMouseOut={(e) => {
         e.currentTarget.style.backgroundPosition = 'right';
+       
         e.currentTarget.style.color = 'black'; // Reset text color on mouse out
-      }} >General</button>
+      }} onClick={()=>setCategory("general")} >General</button>
        <button type="button" style={{
         borderRadius: '2rem',
         padding: '.5em 1em',

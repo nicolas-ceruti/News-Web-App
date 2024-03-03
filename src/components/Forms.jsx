@@ -5,7 +5,7 @@ import backgroundImage from '/Users/mangeshyadav/Desktop/React/new-app/src/asset
 
 function Forms(props) {
   const [showPassword, setShowPassword] = useState(false);
-  const showForgotPassword = props.formtitle === "Sign in";
+  const showForgotPassword = props.button === "Sign in";
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -20,7 +20,7 @@ function Forms(props) {
       minHeight: '100vh', // Ensure the div covers the entire viewport height
     }}>
       <div className="row justify-content-center ">
-        <div className="col-md-6 mt-5 border p-5">
+        <div className="col-md-6 mt-5 border rounded p-5">
           <h2 className="text-center mb-4">{props.formtitle}</h2>
           <form className={props.button} >
             {showForgotPassword && (<div className="mb-3">

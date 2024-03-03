@@ -1,9 +1,17 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import backgroundImage from '/Users/mangeshyadav/Desktop/React/new-app/src/assets/beams-basic.png'
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary border ">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary border sticky-top "
+    style={{
+      backgroundImage: `url(${backgroundImage})`,
+      backgroundSize: 'cover',
+      backgroundRepeat: 'repeat-x',
+      backgroundPosition: 'center',
+      // minHeight: '100vh', // Ensure the div covers the entire viewport height
+    }}>
       <div className="container-fluid">
         <a className="navbar-brand" href="#"><h5>NewziFy</h5></a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
