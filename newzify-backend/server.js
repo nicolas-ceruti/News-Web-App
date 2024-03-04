@@ -36,9 +36,10 @@ const sendSubscriptionEmail = async (name, email) => {
   const mailOptions = {
     from: 'mangesh.07gsb@gmail.com', // Your Gmail address
     to: email,
-    subject: 'Subscription Success',
-    text: `Hi ${name},\n\nThank you for subscribing to Newzify!`,
+    subject: 'Welcome To NewziFy',
+    text: `Hii ${name},\n\nWelcome aboard! 🎉\n\nThank you for subscribing to Newzify! 📰✨\n\nGet ready to embark on a journey of discovery, where every day brings fresh news and insights tailored just for you. Stay ahead of the curve with our curated content covering everything from breaking news to in-depth analysis, delivered straight to your inbox.\n\nWe're thrilled to have you join our community of curious minds, eager to explore the world around us.\n\nHappy reading!\n\nBest regards,\n NewziFy`,
   };
+  
 
   await transporter.sendMail(mailOptions);
 };
