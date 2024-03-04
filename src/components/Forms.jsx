@@ -23,7 +23,7 @@ function Forms(props) {
         <div className="col-md-6 mt-5 border rounded p-5">
           <h2 className="text-center mb-4">{props.formtitle}</h2>
           <form className={props.button} >
-            {showForgotPassword && (<div className="mb-3">
+            {!showForgotPassword && (<div className="mb-3">
               <label htmlFor="name" className="form-label">Full Name</label>
               <input
                 type="text"
