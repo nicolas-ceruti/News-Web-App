@@ -31,6 +31,7 @@ function Forms(props) {
                 id="name"
                 autoComplete="name"
                 required
+                placeholder='your name'
               />
             </div>)}
 
@@ -42,6 +43,7 @@ function Forms(props) {
                 id="email"
                 autoComplete="email"
                 required
+                placeholder='your email'
               />
             </div>
             <div className="mb-3">
@@ -53,6 +55,7 @@ function Forms(props) {
                   id="password"
                   autoComplete="current-password"
                   required
+                  placeholder='password'
                 />
                 <button
                   className="btn btn-outline-secondary"

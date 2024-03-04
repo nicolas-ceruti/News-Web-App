@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import backgroundImage from '/Users/mangeshyadav/Desktop/React/new-app/src/assets/beams-basic.png';
 
 const SubscriptionForm = () => {
   const [name, setName] = useState('');
@@ -30,25 +31,58 @@ const SubscriptionForm = () => {
   };
 
   return (
-    <div>
-      <h2>Subscribe to Newzify</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Your Name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
-        />
-        <input
-          type="email"
-          placeholder="Your Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <button type="submit">Subscribe</button>
-      </form>
+    <div
+      className="border"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        minHeight: '100vh',
+      }}
+    >
+      <div className="container border mt-5 p-5 rounded" style={{ maxWidth: '50%', margin: 'auto' }}>
+        <div>
+          <h1 className="text-center mb-4">Subscribe to Newzify</h1>
+          <form onSubmit={handleSubmit}>
+            <div className="mb-3">
+              <label htmlFor="name" className="form-label">
+                Name
+              </label>
+              <input
+                type="text"
+                placeholder="Your Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
+                className="form-control" // Removed margin-bottom to avoid extra space
+              />
+            </div>
+            <div className="mb-3">
+              <label htmlFor="email" className="form-label">
+                E-mail address
+              </label>
+              <input
+                type="email"
+                placeholder="Your Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                className="form-control" // Removed margin-bottom to avoid extra space
+              />
+            </div>
+            <div className="text-center"> {/* Center the button */}
+  <div className="col-md-11"> {/* Initial width of 50% on medium screens */}
+    <button className="btn btn-outline-danger btn-block" type="submit">
+      Subscribe
+    </button>
+  </div>
+</div>
+
+
+          </form>
+        </div>
+      </div>
     </div>
   );
 };
