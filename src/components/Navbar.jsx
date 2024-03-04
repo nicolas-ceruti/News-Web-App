@@ -2,6 +2,9 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import backgroundImage from '/Users/mangeshyadav/Desktop/React/new-app/src/assets/beams-basic.png'
 
+
+
+
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary border sticky-top "
@@ -36,6 +39,20 @@ function Navbar() {
 
               <a className="nav-link" href="#">Subscribe</a>
                 </h5>
+            </li>
+            <li>
+           
+<div className="btn-group p-1">
+  <button type="button" className="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    India
+  </button>
+  <ul className="dropdown-menu ">
+    <li><a className="dropdown-item" href="#">India</a></li>
+    <li><a className="dropdown-item" href="#">USA</a></li>
+    <li><a className="dropdown-item" href="#">China</a></li>
+    <li><a className="dropdown-item" href="#">Russia</a></li>
+  </ul>
+</div>
             </li>
           </ul>
         </div>

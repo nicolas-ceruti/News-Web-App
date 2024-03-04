@@ -14,11 +14,14 @@ function App() {
   return (
     <>
     <BrowserRouter>
-    <div style={{
+    <div 
+    style={{
       backgroundImage: `url(${backgroundImage})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-    }} >
+    }}
+    
+     >
 
 
     <Navbar/>
