@@ -37,7 +37,7 @@ function Navbar() {
             <li className="nav-item mt-1">
                 <h5>
 
-              <a className="nav-link" href="#">Subscribe</a>
+              <Link className="nav-link" to="/subscribe">Subscribe</Link>
                 </h5>
             </li>
             <li>
