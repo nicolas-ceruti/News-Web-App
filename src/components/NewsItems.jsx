@@ -7,7 +7,7 @@ function NewsItems({ category, setCategory }) {
     const [pageNumber, setPageNumber] = useState(1);
 
     const resultNews = async () => {
-        const url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=4a80da18ae0640f1bb66659c79dfba2e&page=${pageNumber}`;
+        const url = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=4a80da18ae0640f1bb66659c79dfba2e&page=${pageNumber}`;
         const data = await fetch(url);
         const parsedData = await data.json();
         setArticles(parsedData.articles);
