@@ -7,6 +7,7 @@ import google from '/Users/mangeshyadav/Desktop/React/new-app/src/assets/google.
 import facebook from '/Users/mangeshyadav/Desktop/React/new-app/src/assets/facebook.png'
 import backgroundImage from '/Users/mangeshyadav/Desktop/React/new-app/src/assets/beams-basic.png'
 import SubscriptionForm from './components/SubscriptionForm'
+import RegistrationSuccess from './components/RegistrationSucces'
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
     <Route path="/sign-up" element={<Forms formtitle='Create A New Account' button='Sign up' Password='Create Password' google={google}  facebook={facebook}/>} />
     <Route path="/" element={<NewsItems category={category} setCategory={setCategory} country={country} />} />
     <Route path='/subscribe' element={<SubscriptionForm/>}></Route>
+    <Route path='/registration-success' element={<RegistrationSuccess/>}/>
     </Routes>
     </div>
 
