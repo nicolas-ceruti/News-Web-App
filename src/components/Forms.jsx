@@ -1,14 +1,37 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
-import backgroundImage from '/Users/mangeshyadav/Desktop/React/new-app/src/assets/beams-basic.png'
+import axios from 'axios'; // Import axios for making HTTP requests
+import backgroundImage from '/Users/mangeshyadav/Desktop/React/new-app/src/assets/beams-basic.png';
 
 function Forms(props) {
   const [showPassword, setShowPassword] = useState(false);
-  const showForgotPassword = props.button === "Sign in";
+  const showForgotPassword = props.button === 'Sign in';
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Get form data
+    const formData = {
+      name: e.target.elements.name.value,
+      email: e.target.elements.email.value,
+      password: e.target.elements.password.value,
+    };
+
+    try {
+      // Send form data to backend server
+      const response = await axios.post('http://localhost:3003/api/register', formData); // Assuming your backend server is running on localhost:3003
+      console.log(response.data); // Log response from backend
+      alert('Registration successful!');
+      // Optionally, you can redirect the user to another page after successful registration
+    } catch (error) {
+      console.error('Error registering user:', error);
+      alert('An error occurred while registering. Please try again later.');
+    }
   };
 
   return (
@@ -22,7 +45,7 @@ function Forms(props) {
       <div className="row justify-content-center ">
         <div className="col-md-6 mt-5 border rounded p-5">
           <h2 className="text-center mb-4">{props.formtitle}</h2>
-          <form className={props.button} >
+          <form className={props.button} onSubmit={handleSubmit}> {/* Call handleSubmit on form submission */}
             {!showForgotPassword && (<div className="mb-3">
               <label htmlFor="name" className="form-label">Full Name</label>
               <input
