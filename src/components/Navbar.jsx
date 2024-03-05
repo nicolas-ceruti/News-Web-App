@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
 import backgroundImage from '/Users/mangeshyadav/Desktop/React/new-app/src/assets/beams-basic.png'
 
 
 
 function Navbar(props) {
-  const toggleCountry=(countryCode)=>{
+  const[defaultCountry,selectedCountry]=useState('India')
+  const toggleCountry=(countryCode,countryName)=>{
     props.setCountry(countryCode)
+    selectedCountry(countryName)
 
   }
   
@@ -47,13 +49,19 @@ function Navbar(props) {
            
 <div className="btn-group p-1">
   <button type="button" className="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-    India
+ {defaultCountry}
   </button>
   <ul className="dropdown-menu ">
-    <li><a className="dropdown-item" onClick={()=>toggleCountry('in')}>India</a></li>
-    <li><a className="dropdown-item" onClick={()=>toggleCountry('us')}>USA</a></li>
-    <li><a className="dropdown-item" onClick={()=>toggleCountry('ch')}>China</a></li>
-    <li><a className="dropdown-item" onClick={()=>toggleCountry('ru')}>Russia</a></li>
+    <li><a className="dropdown-item"  onClick={()=>toggleCountry('in','India')}>India</a></li>
+    <li><a className="dropdown-item" onClick={()=>toggleCountry('us','USA')}>USA</a></li>
+    <li><a className="dropdown-item" onClick={()=>toggleCountry('ch','China')}>China</a></li>
+    <li><a className="dropdown-item" onClick={()=>toggleCountry('ru','Russia')}>Russia</a></li>
+    <li><a className="dropdown-item" onClick={()=>toggleCountry('jp','Japan')}>Japan</a></li>
+    <li><a className="dropdown-item" onClick={()=>toggleCountry('fr','France')}>France</a></li>
+    <li><a className="dropdown-item" onClick={()=>toggleCountry('ca','Canada')}>Canada</a></li>
+    <li><a className="dropdown-item" onClick={()=>toggleCountry('br','Brazil')}>Brazil</a></li>
+    <li><a className="dropdown-item" onClick={()=>toggleCountry('hk','Hong Kong')}>Hong Kong</a></li>
+    <li><a className="dropdown-item" onClick={()=>toggleCountry('ae','UAE')}>UAE</a></li>
   </ul>
 </div>
             </li>
