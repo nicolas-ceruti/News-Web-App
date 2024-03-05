@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import NewsCards from './NewsCards';
 import Category from './Category';
 
-function NewsItems({ category, setCategory }) {
+function NewsItems({ category, setCategory ,country}) {
     const [articles, setArticles] = useState([]);
     const [pageNumber, setPageNumber] = useState(1);
 
     const resultNews = async () => {
-        const url = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=4a80da18ae0640f1bb66659c79dfba2e&page=${pageNumber}`;
+        const url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=4a80da18ae0640f1bb66659c79dfba2e&page=${pageNumber}`;
         const data = await fetch(url);
         const parsedData = await data.json();
         setArticles(parsedData.articles);
@@ -15,7 +15,7 @@ function NewsItems({ category, setCategory }) {
 
     useEffect(() => {
         resultNews();
-    }, [category, pageNumber]);
+    }, [category, pageNumber,country]);
     
     const pagePreviousHandler = () => {
         if (pageNumber > 1) {
@@ -25,7 +25,7 @@ function NewsItems({ category, setCategory }) {
 
     const pageNextHandler = async () => {
         const nextPageNumber = pageNumber + 1;
-        const url = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=4a80da18ae0640f1bb66659c79dfba2e&page=${nextPageNumber}`;
+        const url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=4a80da18ae0640f1bb66659c79dfba2e&page=${nextPageNumber}`;
         const data = await fetch(url);
         const parsedData = await data.json();
         setArticles(parsedData.articles);

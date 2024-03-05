@@ -4,7 +4,11 @@ import backgroundImage from '/Users/mangeshyadav/Desktop/React/new-app/src/asset
 
 
 
-function Navbar() {
+function Navbar(props) {
+  const toggleCountry=(countryCode)=>{
+    props.setCountry(countryCode)
+
+  }
   
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary border sticky-top "
@@ -13,7 +17,6 @@ function Navbar() {
       backgroundSize: 'cover',
       backgroundRepeat: 'repeat-x',
       backgroundPosition: 'center',
-      // minHeight: '100vh', // Ensure the div covers the entire viewport height
     }}>
       <div className="container-fluid">
         <a className="navbar-brand" href="#"><h5>NewziFy</h5></a>
@@ -47,10 +50,10 @@ function Navbar() {
     India
   </button>
   <ul className="dropdown-menu ">
-    <li><a className="dropdown-item" href="#">India</a></li>
-    <li><a className="dropdown-item" href="#">USA</a></li>
-    <li><a className="dropdown-item" href="#">China</a></li>
-    <li><a className="dropdown-item" href="#">Russia</a></li>
+    <li><a className="dropdown-item" onClick={()=>toggleCountry('in')}>India</a></li>
+    <li><a className="dropdown-item" onClick={()=>toggleCountry('us')}>USA</a></li>
+    <li><a className="dropdown-item" onClick={()=>toggleCountry('ch')}>China</a></li>
+    <li><a className="dropdown-item" onClick={()=>toggleCountry('ru')}>Russia</a></li>
   </ul>
 </div>
             </li>
