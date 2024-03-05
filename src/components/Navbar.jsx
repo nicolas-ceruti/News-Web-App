@@ -4,8 +4,8 @@ import backgroundImage from '/Users/mangeshyadav/Desktop/React/new-app/src/asset
 
 
 
-
 function Navbar() {
+  
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary border sticky-top "
     style={{

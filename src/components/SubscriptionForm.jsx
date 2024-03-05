@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import backgroundImage from '/Users/mangeshyadav/Desktop/React/new-app/src/assets/beams-basic.png';
+import {toast} from "react-toastify"
 
 const SubscriptionForm = () => {
   const [name, setName] = useState('');
@@ -16,12 +17,15 @@ const SubscriptionForm = () => {
         body: JSON.stringify({ name, email }),
       });
       if (response.ok) {
+        toast.success("Successfully Subscribed!!s")
         // Subscription success
         console.log('Subscription success!');
         // Reset form after successful submission
         setName('');
         setEmail('');
       } else {
+        toast.error("Failed Subscribed!")
+
         // Subscription failed
         console.error('Subscription failed.');
       }
