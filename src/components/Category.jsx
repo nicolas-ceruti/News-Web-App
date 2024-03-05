@@ -8,7 +8,18 @@ function Category({setCategory}) {
     
   };
   return (
-    <div  style={{display:'flex',justifyContent:'space-around',flexWrap:'wrap',margin:'1rem auto'}} className='border p-2 m-0'>
+    <div style={{
+      display: 'flex',
+      justifyContent: 'space-around',
+      flexWrap: 'wrap',
+      margin: '1rem auto',
+      position: 'fixed',
+      top: '4rem', // Adjust as needed
+      left: '0',
+      width: '100%',
+      zIndex: '1000',
+      backgroundColor:'#F6F5FD'
+    }} className='border p-2 m-0 fixed-top'>
       <button type="button" style={{
         
         

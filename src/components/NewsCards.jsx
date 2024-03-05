@@ -21,7 +21,7 @@ import backgroundImage from '/Users/mangeshyadav/Desktop/React/new-app/src/asset
 function NewsCards(props) {
   let { sourceName, newsUrl, imageUrl, title,authorName,publishedAt} = props;
   return (
-    <div className="card" style={{ maxWidth: '20rem', minHeight: '27rem',backgroundImage: `url(${backgroundImage})`,
+    <div className="card " style={{ maxWidth: '20rem', minHeight: '27rem',backgroundImage: `url(${backgroundImage})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',

@@ -35,7 +35,7 @@ function NewsItems({ category, setCategory ,country}) {
     return (
         <>
             <Category setCategory={setCategory} />
-            <h3 className='text-center mt-3 ' style={{ wordSpacing: '.5rem' }}>NewziFy - Top Headlines Of The Day</h3>
+            <h3 className='text-center ' style={{ wordSpacing: '.5rem' ,marginTop:'4rem'}}>NewziFy - Top Headlines Of The Day</h3>
             <div style={{ margin: '2rem', padding: '.5rem' }}>
                 <div className="row">
                     {articles.map((element) => (
