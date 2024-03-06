@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
 import backgroundImage from '/Users/mangeshyadav/Desktop/React/new-app/src/assets/beams-basic.png'
-
+import navProfileIcon from '/Users/mangeshyadav/Desktop/React/new-app/src/assets/navProfileIcon.png'
 
 
 function Navbar(props) {
@@ -78,9 +78,10 @@ function Navbar(props) {
 <button className="btn btn-outline-dark m-1" type="submit" >Sign Up</button>
 </Link></>):(<Link to="/user-profile">
 <div className="btn-group dropstart">
-  <button type="button" className="btn btn-outline-dark">Profile</button>
-  <button type="button" className="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-    <span className="visually-hidden">Toggle Dropdown</span>
+  {/* <button type="button" className="btn btn-outline-dark">Profile</button> */}
+  <button type="button" className="btn p-0   dropdown-toggle-split d-flex" data-bs-toggle="dropdown" aria-expanded="false">
+  <img src={navProfileIcon} alt="Accept" className="img-fluid mx-auto d-block" style={{ maxWidth: '2.5rem', maxHeight: '2.5rem' }}/>
+ <span className="visually-hidden">Toggle Dropdown</span>
   </button>
   <ul className="dropdown-menu">
     <li><a className="dropdown-item" href="#">Profile Details</a></li>
