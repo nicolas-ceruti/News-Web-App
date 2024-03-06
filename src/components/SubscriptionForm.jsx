@@ -17,7 +17,7 @@ const SubscriptionForm = () => {
         body: JSON.stringify({ name, email }),
       });
       if (response.ok) {
-        toast.success("Successfully Subscribed!!s")
+        toast.success("Successfully Subscribed To NewziFY!!")
         // Subscription success
         console.log('Subscription success!');
         // Reset form after successful submission

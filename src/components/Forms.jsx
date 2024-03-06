@@ -38,7 +38,7 @@ function Forms(props) {
   };
 
   return (
-    <div className="broder" style={{
+    <div className="border" style={{
       backgroundImage: `url(${backgroundImage})`,
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
