@@ -14,6 +14,7 @@ function App() {
   const[category,setCategory]=useState("general")
   const[country,setCountry]=useState('in');
   const[isLoggedIn,setIsLoggedIn]=useState(false);
+  const[userDetails,setUserDetails]=useState(null)
   return (
     <>
     <BrowserRouter>
@@ -27,12 +28,12 @@ function App() {
      >
 
 
-    <Navbar setCountry={setCountry} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>
+    <Navbar setCountry={setCountry} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} userDetails={userDetails}/>
     
    
     
     <Routes>
-    <Route path="/sign-in" element={<Forms formtitle='Sign-In Using Your Account' button='Sign in' Password='Password' google={google}  facebook={facebook} setIsLoggedIn={setIsLoggedIn}/>}/>
+    <Route path="/sign-in" element={<Forms formtitle='Sign-In Using Your Account' button='Sign in' Password='Password' google={google}  facebook={facebook} setIsLoggedIn={setIsLoggedIn} setUserDetails={setUserDetails}/>}/>
     <Route path="/sign-up" element={<Forms formtitle='Create A New Account' button='Sign up' Password='Create Password' google={google}  facebook={facebook}/>} />
     <Route path="/" element={<NewsItems category={category} setCategory={setCategory} country={country} />} />
     <Route path='/subscribe' element={<SubscriptionForm/>}></Route>

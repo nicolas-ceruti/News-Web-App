@@ -33,6 +33,9 @@ function Forms(props) {
       // Then, redirect the user to the authenticated area of your application
       // Here, we're assuming the backend responds with a success message upon successful login
       if (response.data.success) {
+        //storing user data
+        const user = response.data.user;
+        props.setUserDetails(user);
         // alert('Login successful!');
         // Redirect the user to the authenticated area of your application
         navigate('/authenticated-area');

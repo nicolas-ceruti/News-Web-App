@@ -50,7 +50,8 @@ app.post('/api/login', (req, res) => {
     // Check if user exists and password matches
     if (result.length === 1) {
       // User exists and password matches
-      res.status(200).json({ success: true, message: 'Login successful' });
+      const user = result[0];
+      res.status(200).json({ success: true, message: 'Login successful' ,user});
     } else {
       // User not found or password does not match
       res.status(401).json({ success: false, message: 'Invalid email or password' });

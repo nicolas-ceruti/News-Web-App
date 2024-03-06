@@ -83,7 +83,7 @@ function Navbar(props) {
 <div className="btn-group dropstart">
   {/* <button type="button" className="btn btn-outline-dark">Profile</button> */}
   <button type="button" className="btn p-0   dropdown-toggle-split d-flex" data-bs-toggle="dropdown" aria-expanded="false">
-  <img src={navProfileIcon} alt="Accept" className="img-fluid mx-auto d-block" style={{ maxWidth: '2.5rem', maxHeight: '2.5rem' }}/>
+  <img src={navProfileIcon} alt="Accept" className="img-fluid mx-auto d-block" style={{ maxWidth: '2.5rem', maxHeight: '2.5rem' }}/><span className='p-2'><strong>{props.userDetails.name}</strong></span>
  <span className="visually-hidden">Toggle Dropdown</span>
   </button>
   <ul className="dropdown-menu">
