@@ -47,11 +47,14 @@ function Navbar(props) {
                 </h5>
             </li>
             <li>
-           
+     
 <div className="btn-group p-1">
-  <button type="button" className="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+  {!props.isLoggedIn?(<button type="button"  className="btn btn-outline-dark dropdown-toggle disabled" data-bs-toggle="dropdown" aria-expanded="false">
  {defaultCountry}
-  </button>
+  </button>):<button type="button"  className="btn btn-outline-dark dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+ {defaultCountry}
+  </button>}
+  
   <ul className="dropdown-menu ">
     <li><a className="dropdown-item"  onClick={()=>toggleCountry('in','India')}>India</a></li>
     <li><a className="dropdown-item" onClick={()=>toggleCountry('us','USA')}>USA</a></li>
