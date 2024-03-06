@@ -13,7 +13,37 @@ function Forms(props) {
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
+  const handleSubmitLogin = async (e) => {
+    e.preventDefault();
 
+    // Get form data
+    const formData = {
+      email: e.target.elements.email.value,
+      password: e.target.elements.password.value,
+    };
+
+    try {
+      // Send form data to backend server to verify credentials
+      const response = await axios.post('http://localhost:3004/api/login', formData); // Assuming your backend server is running on localhost:3003 and has an endpoint for login
+      console.log(response.data); // Log response from backend
+      // Assuming the backend responds with some authentication token or session information upon successful login
+      // You can handle this response according to your application's authentication mechanism
+      // For example, you might store the authentication token in localStorage or sessionStorage
+      // Then, redirect the user to the authenticated area of your application
+      // Here, we're assuming the backend responds with a success message upon successful login
+      if (response.data.success) {
+        // alert('Login successful!');
+        // Redirect the user to the authenticated area of your application
+        navigate('/authenticated-area');
+      } else {
+        // Handle invalid credentials scenario
+        alert('Invalid email or password. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error logging in:', error);
+      alert('An error occurred while logging in. Please try again later.');
+    }
+  };
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -48,7 +78,7 @@ function Forms(props) {
       <div className="row justify-content-center ">
         <div className="col-md-6 mt-5 border rounded p-5">
           <h2 className="text-center mb-4">{props.formtitle}</h2>
-          <form className={props.button} onSubmit={handleSubmit}> {/* Call handleSubmit on form submission */}
+          <form className={props.button} onSubmit={props.button==='Sign up'?handleSubmit:handleSubmitLogin}> {/* Call handleSubmit on form submission */}
             {!showForgotPassword && (<div className="mb-3">
               <label htmlFor="name" className="form-label">Full Name</label>
               <input
