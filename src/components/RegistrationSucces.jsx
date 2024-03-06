@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import image from '/Users/mangeshyadav/Desktop/React/new-app/src/assets/profile.png';
 
 function RegistrationSuccess(props) {
@@ -12,7 +13,7 @@ function RegistrationSuccess(props) {
               <img src={image} alt="Accept" className="img-fluid mx-auto d-block" style={{ maxWidth: '8rem', maxHeight: '9rem' }}/>
               <h5 className="card-text text-center p-3">{props.msg}</h5>
               <div className="text-center">
-                <a href="/" className="btn btn-outline-success mt-3">Go to Home</a>
+                <Link to="/" className="btn btn-outline-success mt-3">Go to Home</Link>
               </div>
             </div>
           </div>

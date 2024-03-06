@@ -13,6 +13,7 @@ import RegistrationSuccess from './components/RegistrationSucces'
 function App() {
   const[category,setCategory]=useState("general")
   const[country,setCountry]=useState('in');
+  const[isLoggedIn,setIsLoggedIn]=useState(false);
   return (
     <>
     <BrowserRouter>
@@ -26,17 +27,17 @@ function App() {
      >
 
 
-    <Navbar setCountry={setCountry}/>
+    <Navbar setCountry={setCountry} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>
     
    
     
     <Routes>
-    <Route path="/sign-in" element={<Forms formtitle='Sign-In Using Your Account' button='Sign in' Password='Password' google={google}  facebook={facebook}/>}/>
+    <Route path="/sign-in" element={<Forms formtitle='Sign-In Using Your Account' button='Sign in' Password='Password' google={google}  facebook={facebook} setIsLoggedIn={setIsLoggedIn}/>}/>
     <Route path="/sign-up" element={<Forms formtitle='Create A New Account' button='Sign up' Password='Create Password' google={google}  facebook={facebook}/>} />
     <Route path="/" element={<NewsItems category={category} setCategory={setCategory} country={country} />} />
     <Route path='/subscribe' element={<SubscriptionForm/>}></Route>
     <Route path='/registration-success' element={<RegistrationSuccess title={'Registration Succesfull !!'} msg={'Thank You For Registering To NewziFy'}/>}/>
-    <Route path='/authenticated-area' element={<RegistrationSuccess title={'Logged In Succesfully !!'} msg={'Welcome To NewziFy'}/>}/>
+    <Route path='/authenticated-area' element={<RegistrationSuccess title={'Logged In Succesfully !!'} msg={'Welcome To NewziFy'} setIsLoggedIn={setIsLoggedIn}/>}/>
     </Routes>
     </div>
 

@@ -12,6 +12,7 @@ function Navbar(props) {
 
   }
   
+  
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary border sticky-top "
     style={{
@@ -68,14 +69,31 @@ function Navbar(props) {
           </ul>
         </div>
           <form className="d-flex" role="search">
-            <Link to="/sign-in">
+            {!props.isLoggedIn?(<><Link to="/sign-in">
 
-            <button className="btn btn-outline-dark m-1" type="submit" >Sign In</button>
-            </Link>
-            <Link to="/sign-up">
+<button className="btn btn-outline-dark m-1" type="submit" >Sign In</button>
+</Link>
+<Link to="/sign-up">
 
-            <button className="btn btn-outline-dark m-1" type="submit" >Sign Up</button>
-            </Link>
+<button className="btn btn-outline-dark m-1" type="submit" >Sign Up</button>
+</Link></>):(<Link to="/user-profile">
+<div className="btn-group dropstart">
+  <button type="button" className="btn btn-outline-dark">Profile</button>
+  <button type="button" className="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+    <span className="visually-hidden">Toggle Dropdown</span>
+  </button>
+  <ul className="dropdown-menu">
+    <li><a className="dropdown-item" href="#">Profile Details</a></li>
+    <li><a className="dropdown-item" href="#">Change Password</a></li>
+  
+    <li><hr className="dropdown-divider"/></li>
+    <li><Link className="dropdown-item" to="/" onClick={()=>{alert("Logged Out Successfully");
+  props.setIsLoggedIn(false)}}>Log Out</Link></li>
+  </ul>
+</div>
+            </Link>)
+            }
+            
           </form>
       </div>
     </nav>

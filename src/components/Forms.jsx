@@ -9,12 +9,13 @@ function Forms(props) {
   const [showPassword, setShowPassword] = useState(false);
   const showForgotPassword = props.button === 'Sign in';
   const navigate = useNavigate(); // Initialize useNavigate
-
+  
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
   const handleSubmitLogin = async (e) => {
     e.preventDefault();
+    
 
     // Get form data
     const formData = {
@@ -35,6 +36,9 @@ function Forms(props) {
         // alert('Login successful!');
         // Redirect the user to the authenticated area of your application
         navigate('/authenticated-area');
+        props.setIsLoggedIn(true);
+
+        
       } else {
         // Handle invalid credentials scenario
         alert('Invalid email or password. Please try again.');
