@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import NewsCards from './NewsCards';
 import Category from './Category';
 
-function NewsItems({ category, setCategory ,country}) {
+function NewsItems({ category, setCategory ,country,isLoggedIn,setIsLoggedIn}) {
     const [articles, setArticles] = useState([]);
     const [pageNumber, setPageNumber] = useState(1);
 
@@ -34,7 +34,7 @@ function NewsItems({ category, setCategory ,country}) {
 
     return (
         <>
-            <Category setCategory={setCategory} />
+            <Category setCategory={setCategory} setIsLoggedIn={setIsLoggedIn} isLoggedIn={isLoggedIn} />
             <h3 className='text-center ' style={{ wordSpacing: '.5rem' ,marginTop:'4rem'}}>NewziFy - Top Headlines Of The Day</h3>
             <div style={{ margin: '2rem', padding: '.5rem' }}>
                 <div className="row">
