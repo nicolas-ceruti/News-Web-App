@@ -9,6 +9,7 @@ import backgroundImage from '/Users/mangeshyadav/Desktop/React/new-app/src/asset
 import SubscriptionForm from './components/SubscriptionForm'
 import RegistrationSuccess from './components/RegistrationSucces'
 import ProfileDetail from './components/ProfileDetail'
+import About from './components/About'
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
     <Route path='/registration-success' element={<RegistrationSuccess title={'Registration Succesfull !!'} msg={'Thank You For Registering To NewziFy'}/>}/>
     <Route path='/authenticated-area' element={<RegistrationSuccess title={'Logged In Succesfully !!'} msg={'Welcome To NewziFy'} setIsLoggedIn={setIsLoggedIn}/>}/>
     <Route path='/profileDetail' element={<ProfileDetail userDetails={userDetails}/>}/>
+    <Route path='/about' element={<About/>}/>
     </Routes>
     </div>
 

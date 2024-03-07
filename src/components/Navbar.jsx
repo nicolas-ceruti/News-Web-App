@@ -32,7 +32,7 @@ function Navbar(props) {
             </li>
             <li className="nav-item mt-1">
               <h5>
-                <Link className="nav-link active mx-3" aria-current="page" to="#">About</Link>
+                <Link className="nav-link active mx-3" aria-current="page" to="/about">About</Link>
               </h5>
             </li>
             <li className="nav-item mt-1">
