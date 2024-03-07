@@ -8,6 +8,7 @@ import facebook from '/Users/mangeshyadav/Desktop/React/new-app/src/assets/faceb
 import backgroundImage from '/Users/mangeshyadav/Desktop/React/new-app/src/assets/beams-basic.png'
 import SubscriptionForm from './components/SubscriptionForm'
 import RegistrationSuccess from './components/RegistrationSucces'
+import ProfileDetail from './components/ProfileDetail'
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
     <Route path='/subscribe' element={<SubscriptionForm/>}></Route>
     <Route path='/registration-success' element={<RegistrationSuccess title={'Registration Succesfull !!'} msg={'Thank You For Registering To NewziFy'}/>}/>
     <Route path='/authenticated-area' element={<RegistrationSuccess title={'Logged In Succesfully !!'} msg={'Welcome To NewziFy'} setIsLoggedIn={setIsLoggedIn}/>}/>
+    <Route path='/profileDetail' element={<ProfileDetail userDetails={userDetails}/>}/>
     </Routes>
     </div>
 

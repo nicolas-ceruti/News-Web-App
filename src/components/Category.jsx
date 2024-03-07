@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 function Category({setCategory}) {
   
+  
   const changeCategory = (category) => {
     setCategory(category);
    
@@ -18,7 +19,7 @@ function Category({setCategory}) {
       left: '0',
       width: '100%',
       zIndex: '1000',
-      backgroundColor:'#F6F5FD'
+      backgroundColor:'#F6F5FD' 
     }} className='border p-2 m-0 fixed-top'>
       <button type="button" style={{
         
@@ -33,7 +34,7 @@ function Category({setCategory}) {
         backgroundSize: '200%',
         transition: 'background-position 0.5s ease-out, color 0.5s ease',
        }}
-      className="btn btn-outline-dark btn-sm"
+      className="btn btn-outline-dark "
       onMouseOver={(e) => {
         e.currentTarget.style.backgroundPosition = 'left';
        
@@ -58,7 +59,7 @@ function Category({setCategory}) {
         transition: 'background-position 0.5s ease-out, color 0.5s ease', // Add color transition
         
       }}
-      className="btn btn-outline-dark"
+      className="btn btn-outline-dark "
       onMouseOver={(e) => {
         e.currentTarget.style.backgroundPosition = 'left';
         e.currentTarget.style.color = 'white'; // Change text color on hover
@@ -78,7 +79,7 @@ function Category({setCategory}) {
         backgroundSize: '200%',
         transition: 'background-position 0.5s ease-out, color 0.5s ease' // Add color transition
       }}
-      className="btn btn-outline-dark"
+      className="btn btn-outline-dark "
       onMouseOver={(e) => {
         e.currentTarget.style.backgroundPosition = 'left';
         e.currentTarget.style.color = 'white'; // Change text color on hover
@@ -98,7 +99,7 @@ function Category({setCategory}) {
         backgroundSize: '200%',
         transition: 'background-position 0.5s ease-out, color 0.5s ease' // Add color transition
       }}
-      className="btn btn-outline-dark"
+      className="btn btn-outline-dark "
       onMouseOver={(e) => {
         e.currentTarget.style.backgroundPosition = 'left';
         e.currentTarget.style.color = 'white'; // Change text color on hover
@@ -118,7 +119,7 @@ function Category({setCategory}) {
         backgroundSize: '200%',
         transition: 'background-position 0.5s ease-out, color 0.5s ease' // Add color transition
       }}
-      className="btn btn-outline-dark"
+      className="btn btn-outline-dark "
       onMouseOver={(e) => {
         e.currentTarget.style.backgroundPosition = 'left';
         e.currentTarget.style.color = 'white'; // Change text color on hover
@@ -138,7 +139,7 @@ function Category({setCategory}) {
         backgroundSize: '200%',
         transition: 'background-position 0.5s ease-out, color 0.5s ease' // Add color transition
       }}
-      className="btn btn-outline-dark"
+      className="btn btn-outline-dark "
       onMouseOver={(e) => {
         e.currentTarget.style.backgroundPosition = 'left';
         e.currentTarget.style.color = 'white'; // Change text color on hover
@@ -158,7 +159,7 @@ function Category({setCategory}) {
         backgroundSize: '200%',
         transition: 'background-position 0.5s ease-out, color 0.5s ease' // Add color transition
       }}
-      className="btn btn-outline-dark"
+      className="btn btn-outline-dark "
       onMouseOver={(e) => {
         e.currentTarget.style.backgroundPosition = 'left';
         e.currentTarget.style.color = 'white'; // Change text color on hover

@@ -8,7 +8,7 @@
 //       <div className="card-body" style={{ display: 'flex', flexDirection: 'column' }}>
 //         <h5 className="card-title">{title}</h5>
 //         <p className="card-text flex-grow-1">Source : {sourceName}</p>
-//         <a href={newsUrl} style={{maxWidth:'8rem'}} target='_blank' className="btn btn-sm btn-primary">Read More</a>
+//         <Link href={newsUrl} style={{maxWidth:'8rem'}} target='_blank' className="btn btn-sm btn-primary">Read More</Link>
 //       </div>
 //     </div>
 //   );
@@ -16,6 +16,7 @@
 
 // export default NewsCards;
 import React from 'react';
+import {Link} from 'react-router-dom'
 import backgroundImage from '/Users/mangeshyadav/Desktop/React/new-app/src/assets/beams-basic.png'
 
 function NewsCards(props) {
@@ -34,8 +35,7 @@ function NewsCards(props) {
         </div>
 
         <div style={{display:'flex',justifyContent:'space-between'}}>
-        <a href={newsUrl} target='_blank' className="btn btn btn-outline-primary " style={{ width: '8rem' }}>Read More</a>
-        {/* <a href={newsUrl} target='_blank' className="btn btn btn-outline-primary disabled" disabled style={{ width: '8rem' }}>Sneek Peek</a> */}
+        <Link href={newsUrl} target='_blank' className="btn btn btn-outline-primary " style={{ width: '8rem' }}>Read More</Link>
 
         </div>
       </div>

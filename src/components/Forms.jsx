@@ -4,6 +4,7 @@ import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import axios from 'axios'; // Import axios for making HTTP requests
 import backgroundImage from '/Users/mangeshyadav/Desktop/React/new-app/src/assets/beams-basic.png';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate for redirection
+import {Link} from 'react-router-dom'
 
 function Forms(props) {
   const [showPassword, setShowPassword] = useState(false);
@@ -130,7 +131,7 @@ function Forms(props) {
               </div>
               {showForgotPassword && (
                 <div id="passwordHelp" className="form-text">
-                  <a href="#" className="text-decoration-none">Forgot password?</a>
+                  <Link href="#" className="text-decoration-none">Forgot password?</Link>
                 </div>
               )}
             </div>
@@ -145,7 +146,7 @@ function Forms(props) {
           </form>
           {props.formtitle === "Sign in" && (
             <p className="text-center text-secondary">Not a member?{' '}
-              <a href="#" className="fw-bold text-dark">Start a 14 day free trial</a>
+              <Link href="#" className="fw-bold text-dark">Start a 14 day free trial</Link>
             </p>
           )}
 
