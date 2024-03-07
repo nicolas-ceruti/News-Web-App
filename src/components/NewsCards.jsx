@@ -1,6 +1,6 @@
 
 import React from 'react';
-import {Link} from 'react-router-dom'
+
 import backgroundImage from '/Users/mangeshyadav/Desktop/React/new-app/src/assets/beams-basic.png'
 
 function NewsCards(props) {
