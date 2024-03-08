@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import axios from 'axios'; // Import axios for making HTTP requests
-import backgroundImage from '/Users/mangeshyadav/Desktop/React/new-app/src/assets/beams-basic.png';
+import backgroundImage from '../assets/beams-basic.png';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate for redirection
 import {Link} from 'react-router-dom'
 

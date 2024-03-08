@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import backgroundImage from '/Users/mangeshyadav/Desktop/React/new-app/src/assets/beams-basic.png'
-import navProfileIcon from '/Users/mangeshyadav/Desktop/React/new-app/src/assets/navProfileIcon.png'
+import backgroundImage from '../assets/beams-basic.png'
+import navProfileIcon from '../assets/navProfileIcon.png'
 import {toast} from "react-toastify"
 function Navbar(props) {
   const [defaultCountry, selectedCountry] = useState('India');

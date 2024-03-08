@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-import backgroundImage from '/Users/mangeshyadav/Desktop/React/new-app/src/assets/beams-basic.png'
+import backgroundImage from '../assets/beams-basic.png'
 
 function NewsCards(props) {
   let { sourceName, newsUrl, imageUrl, title,authorName,publishedAt} = props;

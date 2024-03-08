@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-import image from '/Users/mangeshyadav/Desktop/React/new-app/src/assets/profile.png';
+import image from '../assets/profile.png';
 
 function RegistrationSuccess(props) {
   return (

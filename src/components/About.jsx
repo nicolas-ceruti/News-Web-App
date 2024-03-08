@@ -6,7 +6,7 @@ import {
     faLinkedin,
     faDiscord,
 } from "@fortawesome/free-brands-svg-icons";
-import google from '/Users/mangeshyadav/Desktop/React/new-app/src/assets/google.png'
+import google from '../assets/google.png'
 
 const About = () => {
     return (
