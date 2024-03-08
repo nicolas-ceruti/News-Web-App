@@ -20,10 +20,9 @@ function Category({setCategory,isLoggedIn,setIsLoggedIn}) {
       width: '100%',
       zIndex: '1000',
       backgroundColor:'#F6F5FD' 
-    }} className='border p-2 m-0 fixed-top'>
+    }} className='border p-2 m-1 fixed-top'>
       <button type="button" style={{
-        
-        
+
         borderRadius: '2rem',
         padding: '.5em 2em',
         textAlign: 'center',
