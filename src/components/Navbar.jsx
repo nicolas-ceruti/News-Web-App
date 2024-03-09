@@ -19,7 +19,7 @@ function Navbar(props) {
         backgroundPosition: 'center',
       }}>
       <div className="container-fluid">
-        <Link className="navbar-brand" href="#"><h5>NewziFy</h5></Link>
+        <Link className="navbar-brand mx-4" href="#"><h5>NewziFy</h5></Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -27,23 +27,23 @@ function Navbar(props) {
           <ul className="navbar-nav  ">
             <li className="nav-item mt-1">
               <h5>
-                <Link className="nav-link active mx-3" aria-current="page" to='/'>Home</Link>
+                <Link className="nav-link active mx-2 " aria-current="page" to='/'>Home</Link>
               </h5>
             </li>
             <li className="nav-item mt-1">
               <h5>
-                <Link className="nav-link active mx-3" aria-current="page" to="/about">About</Link>
+                <Link className="nav-link active mx-2" aria-current="page" to="/about">About</Link>
               </h5>
             </li>
             <li className="nav-item mt-1">
               <h5>
-                <Link className="nav-link" to="/subscribe">Subscribe</Link>
+                <Link className="nav-link mx-2 " to="/subscribe">Subscribe</Link>
               </h5>
             </li>
             <li>
               <div className="btn-group p-1">
                 {!props.isLoggedIn ? (
-                  <button type="button" className="btn btn-outline-dark dropdown-toggle disabled" data-bs-toggle="dropdown" aria-expanded="false">
+                  <button type="button" className="btn btn-outline-dark dropdown-toggle disabled mx-2" data-bs-toggle="dropdown" aria-expanded="false">
                     {defaultCountry}
                   </button>
                 ) : (
