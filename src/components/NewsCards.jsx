@@ -19,7 +19,7 @@ function NewsCards(props) {
         </div>
 
         <div style={{display:'flex',justifyContent:'space-between'}}>
-        <a href={newsUrl} target='_blank' className="btn btn btn-outline-primary " style={{ width: '8rem' }}>Read More</a>
+        <a href={newsUrl} target='_blank' className="btn btn btn-outline-dark " style={{ width: '8rem' }}>Read More</a>
 
         </div>
       </div>
