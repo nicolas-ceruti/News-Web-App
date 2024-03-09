@@ -13,14 +13,14 @@ function Category({setCategory,isLoggedIn,setIsLoggedIn}) {
       display: 'flex',
       justifyContent: 'space-around',
       flexWrap: 'wrap',
-      margin: '1rem auto',
+      // margin: '1rem auto',
       position: 'fixed',
       top: '4rem', // Adjust as needed
       left: '0',
       width: '100%',
       zIndex: '1000',
       backgroundColor:'#F6F5FD' 
-    }} className='border p-2 m-1 fixed-top'>
+    }} className='border p-2 rounded fixed-top'>
       <button type="button" style={{
 
         borderRadius: '2rem',
