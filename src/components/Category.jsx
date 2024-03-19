@@ -24,7 +24,7 @@ function Category({setCategory,isLoggedIn,setIsLoggedIn}) {
       <button type="button" style={{
 
         borderRadius: '2rem',
-        padding: '.5em 2em',
+        padding: '.4em 2em',
         textAlign: 'center',
         // color: 'black', // Set initial text color to black
         background: 'red', // default color
@@ -33,7 +33,7 @@ function Category({setCategory,isLoggedIn,setIsLoggedIn}) {
         backgroundSize: '200%',
         transition: 'background-position 0.5s ease-out, color 0.5s ease',
        }}
-      className={`btn btn-outline-dark ${isLoggedIn?'':'disabled'}`}
+      className={`btn btn-outline-dark ${isLoggedIn?'':'disabled'} mt-1`}
       onMouseOver={(e) => {
         e.currentTarget.style.backgroundPosition = 'left';
        
@@ -58,7 +58,7 @@ function Category({setCategory,isLoggedIn,setIsLoggedIn}) {
         transition: 'background-position 0.5s ease-out, color 0.5s ease', // Add color transition
         
       }}
-      className={`btn btn-outline-dark ${isLoggedIn?'':'disabled'}`}
+      className={`btn btn-outline-dark ${isLoggedIn?'':'disabled'} mt-1`}
       onMouseOver={(e) => {
         e.currentTarget.style.backgroundPosition = 'left';
         e.currentTarget.style.color = 'white'; // Change text color on hover
@@ -78,7 +78,7 @@ function Category({setCategory,isLoggedIn,setIsLoggedIn}) {
         backgroundSize: '200%',
         transition: 'background-position 0.5s ease-out, color 0.5s ease' // Add color transition
       }}
-      className={`btn btn-outline-dark ${isLoggedIn?'':'disabled'}`}
+      className={`btn btn-outline-dark ${isLoggedIn?'':'disabled'} mt-1`}
       onMouseOver={(e) => {
         e.currentTarget.style.backgroundPosition = 'left';
         e.currentTarget.style.color = 'white'; // Change text color on hover
@@ -98,7 +98,7 @@ function Category({setCategory,isLoggedIn,setIsLoggedIn}) {
         backgroundSize: '200%',
         transition: 'background-position 0.5s ease-out, color 0.5s ease' // Add color transition
       }}
-      className={`btn btn-outline-dark ${isLoggedIn?'':'disabled'}`}
+      className={`btn btn-outline-dark ${isLoggedIn?'':'disabled'} mt-1`}
       onMouseOver={(e) => {
         e.currentTarget.style.backgroundPosition = 'left';
         e.currentTarget.style.color = 'white'; // Change text color on hover
@@ -118,7 +118,7 @@ function Category({setCategory,isLoggedIn,setIsLoggedIn}) {
         backgroundSize: '200%',
         transition: 'background-position 0.5s ease-out, color 0.5s ease' // Add color transition
       }}
-      className={`btn btn-outline-dark ${isLoggedIn?'':'disabled'}`}
+      className={`btn btn-outline-dark ${isLoggedIn?'':'disabled'} mt-1`}
       onMouseOver={(e) => {
         e.currentTarget.style.backgroundPosition = 'left';
         e.currentTarget.style.color = 'white'; // Change text color on hover
@@ -138,7 +138,7 @@ function Category({setCategory,isLoggedIn,setIsLoggedIn}) {
         backgroundSize: '200%',
         transition: 'background-position 0.5s ease-out, color 0.5s ease' // Add color transition
       }}
-      className={`btn btn-outline-dark ${isLoggedIn?'':'disabled'}`}
+      className={`btn btn-outline-dark ${isLoggedIn?'':'disabled'} mt-1`}
       onMouseOver={(e) => {
         e.currentTarget.style.backgroundPosition = 'left';
         e.currentTarget.style.color = 'white'; // Change text color on hover
@@ -158,7 +158,7 @@ function Category({setCategory,isLoggedIn,setIsLoggedIn}) {
         backgroundSize: '200%',
         transition: 'background-position 0.5s ease-out, color 0.5s ease' // Add color transition
       }}
-      className={`btn btn-outline-dark ${isLoggedIn?'':'disabled'}`}
+      className={`btn btn-outline-dark ${isLoggedIn?'':'disabled'} mt-1`}
       onMouseOver={(e) => {
         e.currentTarget.style.backgroundPosition = 'left';
         e.currentTarget.style.color = 'white'; // Change text color on hover

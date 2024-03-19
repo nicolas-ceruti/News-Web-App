@@ -27,12 +27,7 @@ function Forms(props) {
     try {
       // Send form data to backend server to verify credentials
       const response = await axios.post('http://localhost:3004/api/login', formData); // Assuming your backend server is running on localhost:3003 and has an endpoint for login
-      console.log(response.data); // Log response from backend
-      // Assuming the backend responds with some authentication token or session information upon successful login
-      // You can handle this response according to your application's authentication mechanism
-      // For example, you might store the authentication token in localStorage or sessionStorage
-      // Then, redirect the user to the authenticated area of your application
-      // Here, we're assuming the backend responds with a success message upon successful login
+      console.log(response.data); 
       if (response.data.success) {
         //storing user data
         const user = response.data.user;
@@ -47,7 +42,8 @@ function Forms(props) {
         // Handle invalid credentials scenario
         alert('Invalid email or password. Please try again.');
       }
-    } catch (error) {
+    }
+     catch (error) {
       console.error('Error logging in:', error);
       alert('An error occurred while logging in. Please try again later.');
     }

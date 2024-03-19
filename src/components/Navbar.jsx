@@ -11,7 +11,7 @@ function Navbar(props) {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary border sticky-top "
+    <nav className="navbar navbar-expand-lg bg-body-tertiary border sticky-top  "
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: 'cover',
@@ -71,10 +71,10 @@ function Navbar(props) {
           {!props.isLoggedIn ? (
             <div>
               <Link to="/sign-in">
-                <button className="btn btn-outline-dark m-1" type="submit">Sign In</button>
+                <button className="btn btn-outline-dark m-2" type="submit">Sign In</button>
               </Link>
               <Link to="/sign-up">
-                <button className="btn btn-outline-dark m-1" type="submit">Sign Up</button>
+                <button className="btn btn-outline-dark m-2" type="submit">Sign Up</button>
               </Link>
             </div>
           ) : (
