@@ -50,13 +50,11 @@ Contributions to the Real-time News Web App are welcome and encouraged! If you h
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
 
-Special thanks to [your-name] for providing the backend files via Google Drive and [any-other-contributors] for their valuable contributions.
 
----
 
-Let's stay connected! Connect with me on [LinkedIn](your-linkedin-profile) for more updates and collaborations.
+
+Let's stay connected! Connect with me on [LinkedIn](www.linkedin.com/in/mangesh-yadav-65a437237) for more updates and collaborations.
 
 
 # React + Vite
