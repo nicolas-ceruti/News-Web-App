@@ -27,7 +27,7 @@ const About = () => {
                     <h4 className="mt-4">UI Design:</h4>
                     <p>NewziFy boasts a sleek and user-friendly interface, designed to provide a seamless browsing experience. With its clean layout and intuitive navigation, finding and consuming news articles is a breeze.</p>
                     <h4 className="mt-4">About the Creator:</h4>
-                    <p>NewziFy was created by Mangesh Yadav, a passionate developer dedicated to delivering innovative solutions for staying informed in today's fast-paced world. With a focus on user experience and cutting-edge technology, Mangesh strives to make NewziFy the go-to platform for news enthusiasts everywhere.</p>
+                    <p>NewziFy was created by <span style={{color:'red',fontSize:'bold'}}>Mangesh Yadav</span>, a passionate developer dedicated to delivering innovative solutions for staying informed in today's fast-paced world. With a focus on user experience and cutting-edge technology, Mangesh strives to make NewziFy the go-to platform for news enthusiasts everywhere.</p>
                     <div className=" mt-5 d-flex justify-content-around align-items-center mx-auto" style={{ maxWidth: '15rem' }}>
                         <a href="https://github.com/yadavmangesh07" className="github">
                             <FontAwesomeIcon icon={faGithub} size="2x" style={{ color: 'black',marginInline:'.5rem' }} />

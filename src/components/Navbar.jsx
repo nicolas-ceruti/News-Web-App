@@ -11,12 +11,14 @@ function Navbar(props) {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary border sticky-top  "
+    <nav className="navbar navbar-expand-lg bg-body-tertiary border sticky-top "
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'repeat-x',
         backgroundPosition: 'center',
+       paddingRight:'1rem',
+       paddingLeft:'1rem'
       }}>
       <div className="container-fluid">
         <Link className="navbar-brand mx-4" href="#"><h5>NewziFy</h5></Link>

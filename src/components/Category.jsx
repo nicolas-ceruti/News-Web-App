@@ -19,7 +19,8 @@ function Category({setCategory,isLoggedIn,setIsLoggedIn}) {
       left: '0',
       width: '100%',
       zIndex: '1000',
-      backgroundColor:'#F6F5FD' 
+      backgroundColor:'#F6F5FD' ,
+      
     }} className='border p-2 rounded fixed-top'>
       <button type="button" style={{
 
