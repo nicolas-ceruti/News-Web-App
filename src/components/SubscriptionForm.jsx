@@ -24,7 +24,7 @@ const SubscriptionForm = () => {
         setName('');
         setEmail('');
       } else {
-        toast.error("Failed Subscribed!")
+        toast.error("Failed To Subscribed!")
 
         // Subscription failed
         console.error('Subscription failed.');

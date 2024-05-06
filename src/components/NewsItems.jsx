@@ -2,15 +2,23 @@ import React, { useState, useEffect } from 'react';
 import NewsCards from './NewsCards';
 import Category from './Category';
 
+
 function NewsItems({ category, setCategory ,country,isLoggedIn,setIsLoggedIn}) {
     const [articles, setArticles] = useState([]);
     const [pageNumber, setPageNumber] = useState(1);
-
+    const apiKey = import.meta.env.VITE_API_KEY;
+    console.log(apiKey);
     const resultNews = async () => {
-        const url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=4a80da18ae0640f1bb66659c79dfba2e&page=${pageNumber}`;
-        const data = await fetch(url);
-        const parsedData = await data.json();
-        setArticles(parsedData.articles);
+        try {
+           
+
+            const url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}&page=${pageNumber}`;
+            const data = await fetch(url);
+            const parsedData = await data.json();
+            setArticles(parsedData.articles);
+        } catch (error) {
+            console.error("Error fetching news:", error);
+        }
     };
 
     useEffect(() => {
@@ -25,11 +33,17 @@ function NewsItems({ category, setCategory ,country,isLoggedIn,setIsLoggedIn}) {
 
     const pageNextHandler = async () => {
         const nextPageNumber = pageNumber + 1;
-        const url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=4a80da18ae0640f1bb66659c79dfba2e&page=${nextPageNumber}`;
-        const data = await fetch(url);
-        const parsedData = await data.json();
-        setArticles(parsedData.articles);
-        setPageNumber(nextPageNumber);
+        try {
+            const apiKey = import.meta.env.REACT_APP_API_KEY;
+
+            const url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}&page=${nextPageNumber}`;
+            const data = await fetch(url);
+            const parsedData = await data.json();
+            setArticles(parsedData.articles);
+            setPageNumber(nextPageNumber);
+        } catch (error) {
+            console.error("Error fetching next page:", error);
+        }
     };
 
     return (
