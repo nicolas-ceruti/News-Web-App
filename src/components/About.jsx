@@ -14,7 +14,7 @@ const About = () => {
             <div className="row">
                 <div className="col-md-8 mx-auto">
                     <h2 className="text-center mb-4">About NewziFy</h2>
-                    <p>NewziFy is a cutting-edge news web app designed to deliver the latest and most relevant news from around the world. With its intuitive user interface and robust features, staying informed has never been easier.</p>
+                    <p>NewziFy is a cutting-edge news web application designed to deliver the latest and most relevant news from around the world. With its intuitive user interface and robust features, staying informed has never been easier.</p>
                     <h4 className="mt-4">Key Features:</h4>
                     <ul>
                         <li>Personalized News Feed: Tailored to your interests, ensuring you never miss out on important stories.</li>
