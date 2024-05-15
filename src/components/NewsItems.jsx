@@ -7,7 +7,7 @@ function NewsItems({ category, setCategory ,country,isLoggedIn,setIsLoggedIn}) {
     const [articles, setArticles] = useState([]);
     const [pageNumber, setPageNumber] = useState(1);
     const apiKey = import.meta.env.VITE_API_KEY;
-    console.log(apiKey);
+    
     const resultNews = async () => {
         try {
            
