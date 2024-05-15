@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mysql = require('mysql');
+const net = require('net');
 
 const app = express();
 const port = 3004;
@@ -46,6 +47,16 @@ app.post('/api/login', (req, res) => {
       res.status(401).json({ success: false, message: 'Invalid email or password' });
     }
   });
+});
+const server = net.createServer(socket => {
+  // Handle client errors
+  socket.on('clientError', (err) => {
+      console.error('Client error:', err);
+      // Destroy the socket
+      socket.destroy(err);
+  });
+
+  // Other socket handling logic
 });
 
 app.listen(port, () => {
