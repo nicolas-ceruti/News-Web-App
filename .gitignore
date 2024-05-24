@@ -23,6 +23,3 @@ Backend/*
 *.njsproj
 *.sln
 *.sw?
-newzify-backend/*
-backend-server/*
-login-backend/*
