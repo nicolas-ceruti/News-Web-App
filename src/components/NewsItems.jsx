@@ -156,7 +156,7 @@ function NewsItems({ category, setCategory, country, isLoggedIn, setIsLoggedIn }
                         </div>
                     </>
                 ) : (
-                    <div className="text-center">No articles available</div>
+                    <div className="text-center text-danger">No articles available because API key is not purchased by the developer.</div>
                 )}
             </div>
         </>
