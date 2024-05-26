@@ -91,11 +91,18 @@ function NewsItems({ category, setCategory, country, isLoggedIn, setIsLoggedIn }
             const url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}&page=${pageNumber}`;
             const data = await fetch(url);
             const parsedData = await data.json();
-            setArticles(parsedData.articles);
+            console.log("Parsed data:", parsedData);
+            
+            if (parsedData.articles && parsedData.articles.length > 0) {
+                setArticles(parsedData.articles);
+            } else {
+                console.log("No articles found in the response.");
+            }
         } catch (error) {
             console.error("Error fetching news:", error);
         }
     };
+    
 
     useEffect(() => {
         resultNews();
