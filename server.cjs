@@ -21,7 +21,7 @@ const userSchema = new mongoose.Schema({
     updatedAt: { type: Date, default: Date.now }
   });
 
-const User = mongoose.model('User', userSchema);
+const User = mongoose.model('Newzify', userSchema);
 
 // Register new user
 app.post('/api/register', async (req, res) => {
