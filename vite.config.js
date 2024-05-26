@@ -24,6 +24,7 @@ export default ({ command, mode }) => {
     define: {
       
       'process.env.VITE_API_KEY': JSON.stringify(env.VITE_API_KEY),
+      'process.env.DB_URL': JSON.stringify(env.DB_URL),
       
     },
   });
