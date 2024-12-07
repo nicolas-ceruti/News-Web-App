@@ -1,177 +1,69 @@
-import React, { useState } from 'react'
+import React from 'react';
 
-function Category({setCategory,isLoggedIn,setIsLoggedIn}) {
-  
-  
-  const changeCategory = (category) => {
-    setCategory(category);
-   
-    
+function Category({ setCategory, isLoggedIn }) {
+  // Shared button styles
+  const buttonStyle = {
+    borderRadius: '2rem',
+    padding: '.5em 2em',
+    textAlign: 'center',
+    background: 'red',
+    backgroundImage: 'linear-gradient(to left, white 50%, black 50%)',
+    backgroundPosition: 'right',
+    backgroundSize: '200%',
+    transition: 'background-position 0.5s ease-out, color 0.5s ease',
   };
+
+  // Function to handle category change
+  const handleCategoryChange = (category) => {
+    setCategory(category);
+    console.log(category);
+  };
+
+  // Hover effect functions
+  const handleMouseOver = (e) => {
+    e.currentTarget.style.backgroundPosition = 'left';
+    e.currentTarget.style.color = 'white';
+  };
+
+  const handleMouseOut = (e) => {
+    e.currentTarget.style.backgroundPosition = 'right';
+    e.currentTarget.style.color = 'black';
+  };
+
+  // List of categories
+  const categories = ['general', 'health', 'business', 'entertainment', 'sports', 'technology', 'science'];
+
   return (
-    <div style={{
-      display: 'flex',
-      justifyContent: 'space-around',
-      flexWrap: 'wrap',
-      // margin: '1rem auto',
-      position: 'fixed',
-      top: '4rem', // Adjust as needed
-      left: '0',
-      width: '100%',
-      zIndex: '1000',
-      backgroundColor:'#F6F5FD' ,
-      
-    }} className='border p-2 rounded fixed-top'>
-      <button type="button" style={{
-
-        borderRadius: '2rem',
-        padding: '.4em 2em',
-        textAlign: 'center',
-        // color: 'black', // Set initial text color to black
-        background: 'red', // default color
-        backgroundImage: 'linear-gradient(to left,  white 50%, black 50%)',
-        backgroundPosition: 'right',
-        backgroundSize: '200%',
-        transition: 'background-position 0.5s ease-out, color 0.5s ease',
-       }}
-      className={`btn btn-outline-dark ${isLoggedIn?'':'disabled'} mt-1`}
-      onMouseOver={(e) => {
-        e.currentTarget.style.backgroundPosition = 'left';
-       
-        e.currentTarget.style.color = 'white'; // Change text color on hover
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'space-around',
+        flexWrap: 'wrap',
+        position: 'fixed',
+        top: '4rem',
+        left: '0',
+        width: '100%',
+        zIndex: '1000',
+        backgroundColor: '#F6F5FD',
       }}
-      onMouseOut={(e) => {
-        e.currentTarget.style.backgroundPosition = 'right';
-       
-        e.currentTarget.style.color = 'black'; // Reset text color on mouse out
-      }} 
-      
-      onClick={()=>changeCategory("general")} >General</button>
-       <button type="button" style={{
-        borderRadius: '2rem',
-        padding: '.5em 1em',
-        textAlign: 'center',
-        color: 'black', // Set initial text color to black
-        background: 'red', // default color
-        backgroundImage: 'linear-gradient(to left,  white 50%, black 50%)',
-        backgroundPosition: 'right',
-        backgroundSize: '200%',
-        transition: 'background-position 0.5s ease-out, color 0.5s ease', // Add color transition
-        
-      }}
-      className={`btn btn-outline-dark ${isLoggedIn?'':'disabled'} mt-1`}
-      onMouseOver={(e) => {
-        e.currentTarget.style.backgroundPosition = 'left';
-        e.currentTarget.style.color = 'white'; // Change text color on hover
-      }}
-      onMouseOut={(e) => {
-        e.currentTarget.style.backgroundPosition = 'right';
-        e.currentTarget.style.color = 'black'; // Reset text color on mouse out
-      }} onClick={()=>changeCategory("health")}>Health</button>
-      <button type="button" value="health" style={{
-        borderRadius: '2rem',
-        padding: '.5em 2em',
-        textAlign: 'center',
-        color: 'black', // Set initial text color to black
-        background: 'red', // default color
-        backgroundImage: 'linear-gradient(to left,  white 50%, black 50%)',
-        backgroundPosition: 'right',
-        backgroundSize: '200%',
-        transition: 'background-position 0.5s ease-out, color 0.5s ease' // Add color transition
-      }}
-      className={`btn btn-outline-dark ${isLoggedIn?'':'disabled'} mt-1`}
-      onMouseOver={(e) => {
-        e.currentTarget.style.backgroundPosition = 'left';
-        e.currentTarget.style.color = 'white'; // Change text color on hover
-      }}
-      onMouseOut={(e) => {
-        e.currentTarget.style.backgroundPosition = 'right';
-        e.currentTarget.style.color = 'black'; // Reset text color on mouse out
-      }}onClick={()=>changeCategory("business")}>Business</button>
-      <button type="button" style={{
-        borderRadius: '2rem',
-        padding: '.5em 2em',
-        textAlign: 'center',
-        color: 'black', // Set initial text color to black
-        background: 'red', // default color
-        backgroundImage: 'linear-gradient(to left,  white 50%, black 50%)',
-        backgroundPosition: 'right',
-        backgroundSize: '200%',
-        transition: 'background-position 0.5s ease-out, color 0.5s ease' // Add color transition
-      }}
-      className={`btn btn-outline-dark ${isLoggedIn?'':'disabled'} mt-1`}
-      onMouseOver={(e) => {
-        e.currentTarget.style.backgroundPosition = 'left';
-        e.currentTarget.style.color = 'white'; // Change text color on hover
-      }}
-      onMouseOut={(e) => {
-        e.currentTarget.style.backgroundPosition = 'right';
-        e.currentTarget.style.color = 'black'; // Reset text color on mouse out
-      }} onClick={()=>changeCategory("entertainment")}>Entertainment</button>
-      <button type="button" style={{
-        borderRadius: '2rem',
-        padding: '.5em 2em',
-        textAlign: 'center',
-        color: 'black', // Set initial text color to black
-        background: 'red', // default color
-        backgroundImage: 'linear-gradient(to left,  white 50%, black 50%)',
-        backgroundPosition: 'right',
-        backgroundSize: '200%',
-        transition: 'background-position 0.5s ease-out, color 0.5s ease' // Add color transition
-      }}
-      className={`btn btn-outline-dark ${isLoggedIn?'':'disabled'} mt-1`}
-      onMouseOver={(e) => {
-        e.currentTarget.style.backgroundPosition = 'left';
-        e.currentTarget.style.color = 'white'; // Change text color on hover
-      }}
-      onMouseOut={(e) => {
-        e.currentTarget.style.backgroundPosition = 'right';
-        e.currentTarget.style.color = 'black'; // Reset text color on mouse out
-      }} onClick={()=>changeCategory("sports")}>Sports</button>
-      <button type="button" style={{
-        borderRadius: '2rem',
-        padding: '.5em 2em',
-        textAlign: 'center',
-        color: 'black', // Set initial text color to black
-        background: 'red', // default color
-        backgroundImage: 'linear-gradient(to left,  white 50%, black 50%)',
-        backgroundPosition: 'right',
-        backgroundSize: '200%',
-        transition: 'background-position 0.5s ease-out, color 0.5s ease' // Add color transition
-      }}
-      className={`btn btn-outline-dark ${isLoggedIn?'':'disabled'} mt-1`}
-      onMouseOver={(e) => {
-        e.currentTarget.style.backgroundPosition = 'left';
-        e.currentTarget.style.color = 'white'; // Change text color on hover
-      }}
-      onMouseOut={(e) => {
-        e.currentTarget.style.backgroundPosition = 'right';
-        e.currentTarget.style.color = 'black'; // Reset text color on mouse out
-      }} onClick={()=>changeCategory("technology")}>Technology</button>
-      <button type="button" style={{
-        borderRadius: '2rem',
-        padding: '.5em 2em',
-        textAlign: 'center',
-        color: 'black', // Set initial text color to black
-        background: 'red', // default color
-        backgroundImage: 'linear-gradient(to left,  white 50%, black 50%)',
-        backgroundPosition: 'right',
-        backgroundSize: '200%',
-        transition: 'background-position 0.5s ease-out, color 0.5s ease' // Add color transition
-      }}
-      className={`btn btn-outline-dark ${isLoggedIn?'':'disabled'} mt-1`}
-      onMouseOver={(e) => {
-        e.currentTarget.style.backgroundPosition = 'left';
-        e.currentTarget.style.color = 'white'; // Change text color on hover
-      }}
-      onMouseOut={(e) => {
-        e.currentTarget.style.backgroundPosition = 'right';
-        e.currentTarget.style.color = 'black'; // Reset text color on mouse out
-      }} onClick={()=>changeCategory("science")} >Science</button> 
-
+      className="border p-2 rounded fixed-top"
+    >
+      {/* Render buttons dynamically for each category */}
+      {categories.map((category) => (
+        <button
+          key={category}
+          type="button"
+          style={buttonStyle}
+          className={`btn btn-outline-dark ${isLoggedIn ? '' : 'disabled'} mt-1`}
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}
+          onClick={() => handleCategoryChange(category)}
+        >
+          {category.charAt(0).toUpperCase() + category.slice(1)}
+        </button>
+      ))}
     </div>
-  )
+  );
 }
 
-export default Category
-
+export default Category;

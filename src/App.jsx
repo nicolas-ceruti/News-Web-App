@@ -37,7 +37,7 @@ function App() {
     <Routes>
     <Route path="/sign-in" element={<Forms formtitle='Sign-In Using Your Account' button='Sign in' Password='Password' google={google}  facebook={facebook} setIsLoggedIn={setIsLoggedIn} setUserDetails={setUserDetails}/>}/>
     <Route path="/sign-up" element={<Forms formtitle='Create A New Account' button='Sign up' Password='Create Password' google={google}  facebook={facebook}/>} />
-    <Route path="/" element={<NewsItems category={category} setCategory={setCategory} country={country} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>} />
+    <Route path="/" element={<NewsItems category={category} setCategory={setCategory} country={country} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
     <Route path='/subscribe' element={<SubscriptionForm/>}></Route>
     <Route path='/registration-success' element={<RegistrationSuccess title={'Registration Succesfull !!'} msg={'Thank You For Registering To NewziFy'}/>}/>
     <Route path='/authenticated-area' element={<RegistrationSuccess title={'Logged In Succesfully !!'} msg={'Welcome To NewziFy'} setIsLoggedIn={setIsLoggedIn}/>}/>
