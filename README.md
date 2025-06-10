@@ -51,3 +51,7 @@ Contributions to the Real-time News Web App are welcome and encouraged! If you h
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 Let's stay connected! Connect with me on [LinkedIn](https://www.linkedin.com/in/mangesh-yadav-65a437237/) for more updates and collaborations.
+
+<!-- mongoimport --uri "mongodb+srv://usermaster:LAE4a17kei1VmPOY@cluster0.zhwrc7g.mongodb.net/test" \
+  --collection articles \
+  --file ./seed3.json --jsonArray -->

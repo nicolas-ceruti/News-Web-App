@@ -14,7 +14,7 @@ import About from './components/About'
 
 function App() {
   const[category,setCategory]=useState("general")
-  const[country,setCountry]=useState('in');
+  const[country,setCountry]=useState('br');
   const[isLoggedIn,setIsLoggedIn]=useState(false);
   const[userDetails,setUserDetails]=useState(null)
   return (
@@ -39,8 +39,8 @@ function App() {
     <Route path="/sign-up" element={<Forms formtitle='Create A New Account' button='Sign up' Password='Create Password' google={google}  facebook={facebook}/>} />
     <Route path="/" element={<NewsItems category={category} setCategory={setCategory} country={country} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
     <Route path='/subscribe' element={<SubscriptionForm/>}></Route>
-    <Route path='/registration-success' element={<RegistrationSuccess title={'Registration Succesfull !!'} msg={'Thank You For Registering To NewziFy'}/>}/>
-    <Route path='/authenticated-area' element={<RegistrationSuccess title={'Logged In Succesfully !!'} msg={'Welcome To NewziFy'} setIsLoggedIn={setIsLoggedIn}/>}/>
+    <Route path='/registration-success' element={<RegistrationSuccess title={'Registration Succesfull !!'} msg={'Thank You For Registering To FurbNews'} linkTo={'/sign-in'} messageTo={'Go to Login'}/>}/>
+    <Route path='/authenticated-area' element={<RegistrationSuccess title={'Logged In Succesfully !!'} msg={'Welcome To FurbNews'} linkTo={'/'} messageTo={'Go to Home'} setIsLoggedIn={setIsLoggedIn}/>}/>
     <Route path='/profileDetail' element={<ProfileDetail userDetails={userDetails}/>}/>
     <Route path='/about' element={<About/>}/>
     </Routes>

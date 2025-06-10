@@ -26,7 +26,7 @@ function Forms(props) {
 
     try {
       // Send form data to backend server to verify credentials
-      const response = await axios.post('https://news-web-app-backend-re7n.onrender.com/api/login', formData); // Assuming your backend server is running on localhost:3003 and has an endpoint for login
+      const response = await axios.post('http://localhost:3001/api/login', formData); // Assuming your backend server is running on localhost:3003 and has an endpoint for login
       console.log(response.data); 
       if (response.data.success) {
         //storing user data
@@ -60,7 +60,7 @@ function Forms(props) {
 
     try {
       // Send form data to backend server
-      const response = await axios.post('https://news-web-app-backend-re7n.onrender.com/api/register', formData); // Assuming your backend server is running on localhost:3003
+      const response = await axios.post('http://localhost:3001/api/register', formData); // Assuming your backend server is running on localhost:3003
       console.log(response.data); // Log response from backend
       // alert('Registration successful!');
       // Redirect to the success page after successful registration
@@ -125,11 +125,11 @@ function Forms(props) {
                   {!showPassword ? <FontAwesomeIcon icon={faEyeSlash} /> : <FontAwesomeIcon icon={faEye} />}
                 </button>
               </div>
-              {showForgotPassword && (
+              {/* {showForgotPassword && (
                 <div id="passwordHelp" className="form-text">
                   <Link href="#" className="text-decoration-none">Forgot password?</Link>
                 </div>
-              )}
+              )} */}
             </div>
             <div className="mb-3">
               <button style={{height:'3rem'}}
@@ -146,8 +146,7 @@ function Forms(props) {
             </p>
           )}
 
-          {/* Sign up/Sign in with Google and Facebook */}
-          <div className="mt-3 " style={{ display: 'flex', justifyContent: 'space-around', margin: '1rem' }}>
+          {/* <div className="mt-3 " style={{ display: 'flex', justifyContent: 'space-around', margin: '1rem' }}>
             <button className="btn btn-outline-dark w-50 mx-4 ">
               {props.button} With&nbsp; <img style={{height:'2rem',marginBottom:'.2rem'}} src={props.google}/>
             </button>
@@ -156,7 +155,7 @@ function Forms(props) {
               {props.button} With &nbsp;<img style={{height:'2rem',marginBottom:'.2rem'}} src={props.facebook}/>
             </button>
 
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

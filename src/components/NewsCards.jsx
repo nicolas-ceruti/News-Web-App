@@ -8,7 +8,7 @@ function NewsCards(props) {
     <div className="card mx-auto my-3" 
       style={{ 
         maxWidth: '20rem', 
-        minHeight: '27rem', 
+        minHeight: '24rem', 
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
@@ -32,7 +32,7 @@ function NewsCards(props) {
           <p className="card-text">
             Source: {sourceName} <br />
             Author: {authorName} <br />
-            Published At: {publishedAt}
+            {/* Published At: {publishedAt} */}
           </p>
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>

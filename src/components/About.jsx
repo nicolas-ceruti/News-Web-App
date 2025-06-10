@@ -12,23 +12,21 @@ const About = () => {
     return (
         <div className="container mt-5">
             <div className="row">
-                <div className="col-md-8 mx-auto">
-                    <h2 className="text-center mb-4">About NewziFy</h2>
-                    <p>NewziFy is a cutting-edge news web application designed to deliver the latest and most relevant news from around the world. With its intuitive user interface and robust features, staying informed has never been easier.</p>
-                    <h4 className="mt-4">Key Features:</h4>
+            <div className="col-md-8 mx-auto">
+                    <h2 className="text-center mb-4">Sobre o FurbNews</h2>
+                    <p>O FurbNews é um aplicativo web de notícias inovador, projetado para entregar as notícias mais recentes e relevantes de todo o mundo. Com sua interface de usuário intuitiva e recursos robustos, manter-se informado nunca foi tão fácil.</p>
+                    <h4 className="mt-4">Principais Recursos:</h4>
                     <ul>
-                        <li>Personalized News Feed: Tailored to your interests, ensuring you never miss out on important stories.</li>
-                        <li>Search Functionality: Easily find articles on topics that matter to you.</li>
-                        <li>Push Notifications: Stay updated with breaking news alerts and personalized recommendations.</li>
-                        <li>Social Media Integration: Share articles effortlessly with your friends and followers.</li>
-                        <li>Bookmarking and Saving: Save articles for later reading and organize them for easy access.</li>
-                        <li>Commenting and Discussion: Engage with other users and share your opinions on news articles.</li>
+                        <li>Feed de Notícias Personalizado: Adaptado aos seus interesses, garantindo que você nunca perca histórias importantes.</li>
+                        <li>Funcionalidade de Busca: Encontre facilmente artigos sobre tópicos que importam para você.</li>
+                        <li>Notificações Push: Mantenha-se atualizado com alertas de notícias de última hora e recomendações personalizadas.</li>
+                        <li>Integração com Redes Sociais: Compartilhe artigos facilmente com seus amigos e seguidores.</li>
+                        <li>Favoritos e Salvamento: Salve artigos para leitura posterior e organize-os para fácil acesso.</li>
+                        <li>Comentários e Discussão: Interaja com outros usuários e compartilhe suas opiniões sobre artigos de notícias.</li>
                     </ul>
-                    <h4 className="mt-4">UI Design:</h4>
-                    <p>NewziFy boasts a sleek and user-friendly interface, designed to provide a seamless browsing experience. With its clean layout and intuitive navigation, finding and consuming news articles is a breeze.</p>
-                    <h4 className="mt-4">About the Creator:</h4>
-                    <p>NewziFy was created by <span style={{color:'red',fontSize:'bold'}}>Mangesh Yadav</span>, a passionate developer dedicated to delivering innovative solutions for staying informed in today's fast-paced world. With a focus on user experience and cutting-edge technology, Mangesh strives to make NewziFy the go-to platform for news enthusiasts everywhere.</p>
-                    <div className=" mt-5 d-flex justify-content-around align-items-center mx-auto" style={{ maxWidth: '15rem' }}>
+                    <h4 className="mt-4">Design da Interface:</h4>
+                    <p>O FurbNews possui uma interface elegante e amigável, projetada para proporcionar uma experiência de navegação fluida. Com seu layout limpo e navegação intuitiva, encontrar e consumir artigos de notícias é muito simples.</p>
+                    {/* <div className=" mt-5 d-flex justify-content-around align-items-center mx-auto" style={{ maxWidth: '15rem' }}>
                         <a href="https://github.com/yadavmangesh07" className="github">
                             <FontAwesomeIcon icon={faGithub} size="2x" style={{ color: 'black',marginInline:'.5rem' }} />
                         </a>
@@ -47,7 +45,7 @@ const About = () => {
                             </a>
                         </div>
                         
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

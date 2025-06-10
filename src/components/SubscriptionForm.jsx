@@ -9,7 +9,7 @@ const SubscriptionForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://news-web-app-backend-re7n.onrender.com/subscribe', {
+      const response = await fetch('http://localhost:3001/subscribe', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

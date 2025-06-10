@@ -13,7 +13,7 @@ function RegistrationSuccess(props) {
               <img src={image} alt="Accept" className="img-fluid mx-auto d-block" style={{ maxWidth: '8rem', maxHeight: '9rem' }}/>
               <h5 className="card-text text-center p-3">{props.msg}</h5>
               <div className="text-center">
-                <Link to="/" className="btn btn-outline-success mt-3">Go to Home</Link>
+                <Link to={props.linkTo} className="btn btn-outline-success mt-3">{props.messageTo}</Link>
               </div>
             </div>
           </div>

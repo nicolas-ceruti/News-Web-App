@@ -1,0 +1,222 @@
+[
+    {
+      "country": "fr",
+      "topic": "technology",
+      "source": { "id": null, "name": "Le Monde" },
+      "author": "GEMINI",
+      "title": "Google Lance Gemini 2.5 en France avec Intégration Chrome",
+      "description": "Google déploie Gemini 2.5 en France, intégrant l'IA au navigateur Chrome pour des recherches plus intelligentes.",
+      "url": "https://www.lemonde.fr/technologie/2025/06/10/google-gemini-2-5-france",
+      "urlToImage": "https://cdn.lemonde.fr/image/tech/gemini-chrome.jpeg?p=f%3Djpeg%26w%3D1200%26h%3D630%26r%3Dcover",
+      "publishedAt": "2025-06-10T08:00:00Z"
+    },
+    {
+      "country": "fr",
+      "topic": "general",
+      "source": { "id": null, "name": "France 24" },
+      "author": "GEMINI",
+      "title": "Macron Appelle à l’Unité Européenne Face aux Tarifs Américains",
+      "description": "Le président Macron exhorte l’UE à adopter une position commune contre les nouvelles taxes imposées par les États-Unis.",
+      "url": "https://www.france24.com/fr/2025/06/10/macron-tarifs-eu",
+      "urlToImage": "https://cdn.france24.com/image/politics/macron-speech.jpeg?p=f%3Djpeg%26w%3D1200%26h%3D630%26r%3Dcover",
+      "publishedAt": "2025-06-10T08:15:00Z"
+    },
+    {
+      "country": "fr",
+      "topic": "health",
+      "source": { "id": null, "name": "Le Figaro" },
+      "author": "GEMINI",
+      "title": "Augmentation des Cas de Grippe en France Avant l’Hiver",
+      "description": "Les autorités sanitaires françaises signalent une hausse des cas de grippe et appellent à la vaccination.",
+      "url": "https://sante.lefigaro.fr/2025/06/10/grippe-france-vaccination",
+      "urlToImage": "https://cdn.lefigaro.fr/image/health/flu-vaccine.jpeg?p=f%3Djpeg%26w%3D1200%26h%3D630%26r%3Dcover",
+      "publishedAt": "2025-06-10T08:30:00Z"
+    },
+    {
+      "country": "fr",
+      "topic": "science",
+      "source": { "id": null, "name": "Sciences et Avenir" },
+      "author": "GEMINI",
+      "title": "Découverte d’une Nouvelle Espèce Marine au Large de la Bretagne",
+      "description": "Des chercheurs français identifient une nouvelle espèce de poisson dans l’Atlantique, soulignant la biodiversité marine.",
+      "url": "https://www.sciencesetavenir.fr/science/2025/06/10/nouvelle-espece-bretagne",
+      "urlToImage": "https://cdn.sciencesetavenir.fr/image/science/marine-species.jpeg?p=f%3Djpeg%26w%3D1200%26h%3D630%26r%3Dcover",
+      "publishedAt": "2025-06-10T08:45:00Z"
+    },
+    {
+      "country": "fr",
+      "topic": "entertainment",
+      "source": { "id": null, "name": "Télérama" },
+      "author": "GEMINI",
+      "title": "Festival de Cannes 2025 Annonce une Programmation Éclectique",
+      "description": "Le Festival de Cannes dévoile une sélection variée de films, avec un focus sur les réalisateurs émergents.",
+      "url": "https://www.telerama.fr/cinema/2025/06/10/cannes-2025-programmation",
+      "urlToImage": "https://cdn.telerama.fr/image/entertainment/cannes-red-carpet.jpeg?p=f%3Djpeg%26w%3D1200%26h%3D630%26r%3Dcover",
+      "publishedAt": "2025-06-10T09:00:00Z"
+    },
+    {
+      "country": "fr",
+      "topic": "business",
+      "source": { "id": null, "name": "Les Echos" },
+      "author": "GEMINI",
+      "title": "Airbus Investit dans l’Innovation Verte pour 2030",
+      "description": "Airbus annonce un plan d’investissement de 5 milliards d’euros pour des avions à faible émission en France.",
+      "url": "https://www.lesechos.fr/business/2025/06/10/airbus-innovation-verte",
+      "urlToImage": "https://cdn.lesechos.fr/image/business/airbus-plane.jpeg?p=f%3Djpeg%26w%3D1200%26h%3D630%26r%3Dcover",
+      "publishedAt": "2025-06-10T09:15:00Z"
+    },
+    {
+      "country": "fr",
+      "topic": "technology",
+      "source": { "id": null, "name": "01net" },
+      "author": "GEMINI",
+      "title": "L’IA Française Atteint un Nouveau Jalon dans l’Analyse de Données",
+      "description": "Une startup française dévoile une IA capable d’analyser des données complexes en temps réel pour les entreprises.",
+      "url": "https://www.01net.com/technologie/2025/06/10/ia-francaise-donnees",
+      "urlToImage": "https://cdn.01net.com/image/tech/ai-data.jpeg?p=f%3Djpeg%26w%3D1200%26h%3D630%26r%3Dcover",
+      "publishedAt": "2025-06-10T09:30:00Z"
+    },
+    {
+      "country": "fr",
+      "topic": "general",
+      "source": { "id": null, "name": "Libération" },
+      "author": "GEMINI",
+      "title": "Manifestations à Paris Contre la Réforme des Retraites",
+      "description": "Des milliers de Français manifestent à Paris contre une nouvelle réforme des retraites proposée par le gouvernement.",
+      "url": "https://www.liberation.fr/politique/2025/06/10/paris-reforme-retraites",
+      "urlToImage": "https://cdn.liberation.fr/image/politics/paris-protest.jpeg?p=f%3Djpeg%26w%3D1200%26h%3D630%26r%3Dcover",
+      "publishedAt": "2025-06-10T09:45:00Z"
+    },
+    {
+      "country": "fr",
+      "topic": "health",
+      "source": { "id": null, "name": "Santé Magazine" },
+      "author": "GEMINI",
+      "title": "Nouveau Traitement Contre le Cancer Testé en France",
+      "description": "Un essai clinique français montre des résultats prometteurs pour un traitement innovant contre le cancer du poumon.",
+      "url": "https://www.santemagazine.fr/sante/2025/06/10/cancer-traitement-france",
+      "urlToImage": "https://cdn.santemagazine.fr/image/health/cancer-research.jpeg?p=f%3Djpeg%26w%3D1200%26h%3D630%26r%3Dcover",
+      "publishedAt": "2025-06-10T10:00:00Z"
+    },
+    {
+      "country": "fr",
+      "topic": "entertainment",
+      "source": { "id": null, "name": "Première" },
+      "author": "GEMINI",
+      "title": "Nouveau Film de Godard Attendu pour 2026",
+      "description": "Un projet posthume de Jean-Luc Godard est annoncé, suscitant l’enthousiasme des cinéphiles français.",
+      "url": "https://www.premiere.fr/cinema/2025/06/10/godard-nouveau-film",
+      "urlToImage": "https://cdn.premiere.fr/image/entertainment/godard-film.jpeg?p=f%3Djpeg%26w%3D1200%26h%3D630%26r%3Dcover",
+      "publishedAt": "2025-06-10T10:15:00Z"
+    },
+    {
+      "country": "ch",
+      "topic": "technology",
+      "source": { "id": null, "name": "Xinhua" },
+      "author": "GEMINI",
+      "title": "华为发布下一代人工智能芯片",
+      "description": "华为在上海发布全新人工智能芯片，提升云计算和自动驾驶性能。",
+      "url": "https://www.xinhuanet.com/tech/2025/06/10/huawei-ai-chip",
+      "urlToImage": "https://cdn.xinhuanet.com/image/tech/huawei-chip.jpeg?p=f%3Djpeg%26w%3D1200%26h%3D630%26r%3Dcover",
+      "publishedAt": "2025-06-10T08:00:00Z"
+    },
+    {
+      "country": "ch",
+      "topic": "general",
+      "source": { "id": null, "name": "People’s Daily" },
+      "author": "GEMINI",
+      "title": "中国回应美国新关税政策",
+      "description": "中国外交部批评美国新关税措施，呼吁通过对话解决贸易争端。",
+      "url": "https://www.people.com.cn/politics/2025/06/10/china-us-tariffs",
+      "urlToImage": "https://cdn.people.com.cn/image/politics/trade-meeting.jpeg?p=f%3Djpeg%26w%3D1200%26h%3D630%26r%3Dcover",
+      "publishedAt": "2025-06-10T08:15:00Z"
+    },
+    {
+      "country": "ch",
+      "topic": "health",
+      "source": { "id": null, "name": "China Daily" },
+      "author": "GEMINI",
+      "title": "中国启动全国疫苗接种计划",
+      "description": "中国卫健委宣布新疫苗接种计划，针对流感和新冠变种病毒。",
+      "url": "https://www.chinadaily.com.cn/health/2025/06/10/vaccine-plan",
+      "urlToImage": "https://cdn.chinadaily.com.cn/image/health/vaccine-syringe.jpeg?p=f%3Djpeg%26w%3D1200%26h%3D630%26r%3Dcover",
+      "publishedAt": "2025-06-10T08:30:00Z"
+    },
+    {
+      "country": "ch",
+      "topic": "science",
+      "source": { "id": null, "name": "ScienceNet" },
+      "author": "GEMINI",
+      "title": "中国探测器发现月球新矿物",
+      "description": "中国月球探测器在月球南极发现一种新矿物，可能用于未来能源开发。",
+      "url": "https://www.sciencenet.cn/science/2025/06/10/moon-mineral",
+      "urlToImage": "https://cdn.sciencenet.cn/image/science/moon-rover.jpeg?p=f%3Djpeg%26w%3D1200%26h%3D630%26r%3Dcover",
+      "publishedAt": "2025-06-10T08:45:00Z"
+    },
+    {
+      "country": "ch",
+      "topic": "entertainment",
+      "source": { "id": null, "name": "Sina Entertainment" },
+      "author": "GEMINI",
+      "title": "2025年春节档电影阵容公布",
+      "description": "中国电影市场公布2025年春节档电影，包括多部备受期待的国产大片。",
+      "url": "https://ent.sina.com.cn/film/2025/06/10/spring-festival-movies",
+      "urlToImage": "https://cdn.sina.com.cn/image/entertainment/movie-poster.jpeg?p=f%3Djpeg%26w%3D1200%26h%3D630%26r%3Dcover",
+      "publishedAt": "2025-06-10T09:00:00Z"
+    },
+    {
+      "country": "ch",
+      "topic": "business",
+      "source": { "id": null, "name": "Caixin" },
+      "author": "GEMINI",
+      "title": "中国电动车市场2025年预计增长20%",
+      "description": "报告显示，中国电动车销量将持续增长，受到政策支持和市场需求推动。",
+      "url": "https://www.caixin.com/business/2025/06/10/ev-market-growth",
+      "urlToImage": "https://cdn.caixin.com/image/business/electric-car.jpeg?p=f%3Djpeg%26w%3D1200%26h%3D630%26r%3Dcover",
+      "publishedAt": "2025-06-10T09:15:00Z"
+    },
+    {
+      "country": "ch",
+      "topic": "technology",
+      "source": { "id": null, "name": "TechWeb" },
+      "author": "GEMINI",
+      "title": "百度发布全新自动驾驶系统",
+      "description": "百度推出升级版自动驾驶系统，计划在2026年实现全国覆盖。",
+      "url": "https://www.techweb.com.cn/tech/2025/06/10/baidu-self-driving",
+      "urlToImage": "https://cdn.techweb.com.cn/image/tech/autonomous-car.jpeg?p=f%3Djpeg%26w%3D1200%26h%3D630%26r%3Dcover",
+      "publishedAt": "2025-06-10T09:30:00Z"
+    },
+    {
+      "country": "ch",
+      "topic": "general",
+      "source": { "id": null, "name": "Global Times" },
+      "author": "GEMINI",
+      "title": "中国加强与非洲国家经济合作",
+      "description": "中国宣布新投资计划，旨在深化与非洲国家的贸易和 infraestrutura。",
+      "url": "https://www.globaltimes.cn/politics/2025/06/10/china-africa-cooperation",
+      "urlToImage": "https://cdn.globaltimes.cn/image/politics/africa-trade.jpeg?p=f%3Djpeg%26w%3D1200%26h%3D630%26r%3Dcover",
+      "publishedAt": "2025-06-10T09:45:00Z"
+    },
+    {
+      "country": "ch",
+      "topic": "health",
+      "source": { "id": null, "name": "Health Times" },
+      "author": "GEMINI",
+      "title": "中国开发新型抗癌药物",
+      "description": "中国科学家开发出一种新型抗癌药物，临床试验显示显著疗效。",
+      "url": "https://www.healthtimes.com.cn/health/2025/06/10/anticancer-drug",
+      "urlToImage": "https://cdn.healthtimes.com.cn/image/health/cancer-lab.jpeg?p=f%3Djpeg%26w%3D1200%26h%3D630%26r%3Dcover",
+      "publishedAt": "2025-06-10T10:00:00Z"
+    },
+    {
+      "country": "ch",
+      "topic": "science",
+      "source": { "id": null, "name": "China Science Daily" },
+      "author": "GEMINI",
+      "title": "中国量子计算研究取得突破",
+      "description": "中国科研团队开发出新型量子计算机，运算速度创全球纪录。",
+      "url": "https://www.csdsci.cn/science/2025/06/10/quantum-computing",
+      "urlToImage": "https://cdn.csdsci.cn/image/science/quantum-device.jpeg?p=f%3Djpeg%26w%3D1200%26h%3D630%26r%3Dcover",
+      "publishedAt": "2025-06-10T10:15:00Z"
+    }
+  ]
